@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
+import os
 
 
 def plot_entropy_reduction(max_n=100, output_path="figures/entropy_reduction.svg"):
@@ -42,12 +43,9 @@ def plot_entropy_reduction(max_n=100, output_path="figures/entropy_reduction.svg
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
-        output_path,
-        format="svg",
-        bbox_inches="tight",
-        facecolor="black",
-        edgecolor="none",
+        "figures/entropy_reduction.pdf", format="pdf", bbox_inches="tight", dpi=300
     )
     plt.close()
 
@@ -89,12 +87,9 @@ def create_compression_visualization(output_path="figures/compression_ratio.svg"
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
-        output_path,
-        format="svg",
-        bbox_inches="tight",
-        facecolor="black",
-        edgecolor="none",
+        "figures/compression_ratio.pdf", format="pdf", bbox_inches="tight", dpi=300
     )
     plt.close()
 
@@ -136,13 +131,8 @@ def plot_bit_evolution(n=27, steps=100, output_path="figures/bit_evolution.svg")
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
-    plt.savefig(
-        output_path,
-        format="svg",
-        bbox_inches="tight",
-        facecolor="black",
-        edgecolor="none",
-    )
+    output_path = output_path.replace(".svg", ".pdf")
+    plt.savefig("figures/bit_evolution.pdf", format="pdf", bbox_inches="tight", dpi=300)
     plt.close()
 
 

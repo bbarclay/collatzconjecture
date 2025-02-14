@@ -7,10 +7,17 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{algorithm}
-\usepackage[noend]{algpseudocode}
+\usepackage{algpseudocode}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{tikz}
+
+% Define tau and geq commands
+\newcommand{\tauvar}{\tau}
+\newcommand{\geqvar}{\geq}
+
+% Update figure paths
+\graphicspath{{figures/}{entropy/}}
 
 % Theorem environments
 \newtheorem{theorem}{Theorem}[section]
@@ -41,5 +48,15 @@
 \input{sections/conclusion}
 
 \input{sections/bibliography}
+
+\includegraphics[width=0.8\textwidth]{transformation_phases.pdf}
+\includegraphics[width=0.8\textwidth]{bit_evolution.pdf}
+\includegraphics[width=0.8\textwidth]{ergodic_property.pdf}
+\includegraphics[width=0.8\textwidth]{tau_distribution.pdf}
+\includegraphics[width=0.8\textwidth]{vertical_structure.pdf}
+\includegraphics[width=0.8\textwidth]{trajectory_tree.pdf}
+\includegraphics[width=0.8\textwidth]{bit_patterns.pdf}
+\includegraphics[width=0.8\textwidth]{compression_ratio.pdf}
+\includegraphics[width=0.8\textwidth]{entropy_reduction.pdf}
 
 \end{document} 

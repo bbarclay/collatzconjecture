@@ -224,9 +224,10 @@ def create_cover_art(output_path="figures/cover_art.svg"):
 
     # Save with high quality
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor=colors["bg"],
         edgecolor="none",

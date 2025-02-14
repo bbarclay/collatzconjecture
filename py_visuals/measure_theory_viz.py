@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
 import seaborn as sns
 from pathlib import Path
+import os
 
 
 def plot_tau_distribution(max_n=1000, output_path="figures/tau_distribution.svg"):
@@ -44,9 +45,10 @@ def plot_tau_distribution(max_n=1000, output_path="figures/tau_distribution.svg"
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor="black",
         edgecolor="none",
@@ -95,9 +97,10 @@ def create_ergodic_visualization(output_path="figures/ergodic_property.svg"):
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor="black",
         edgecolor="none",
@@ -156,9 +159,10 @@ def plot_vertical_structure(max_n=100, output_path="figures/vertical_structure.s
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor="black",
         edgecolor="none",

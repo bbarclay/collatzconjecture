@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  13 FEB 2025 01:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  14 FEB 2025 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**latexpaper/main.tex
-(./latexpaper/main.tex
+**main.tex
+(./main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/article.cls
@@ -661,12 +661,23 @@ ef
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box68
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `fig:tau_distribution' multiply defined.
+
+
+LaTeX Warning: Label `fig:ergodic_property' multiply defined.
+
+
+LaTeX Warning: Label `fig:vertical_structure' multiply defined.
+
+
+LaTeX Warning: Label `fig:bit_evolution' multiply defined.
+
+
+LaTeX Warning: Label `fig:bit_evolution' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTe
+LaTeX Font Info:    C

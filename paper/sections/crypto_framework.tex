@@ -12,8 +12,8 @@ where $\tau(n)$ is the largest power of 2 that divides $3n + 1$. Figure \ref{fig
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/trajectory_tree.svg}
-\caption{Trajectory tree starting from n=27, demonstrating the one-way nature of the Collatz function. Each step is easily computed forward but finding predecessors requires exponential search.}
+\includegraphics[width=0.8\textwidth]{figures/trajectory_tree.pdf}
+\caption{Trajectory tree showing branching patterns.}
 \label{fig:trajectory_tree}
 \end{figure}
 
@@ -37,8 +37,8 @@ This property emerges from the carry propagation in binary addition and multipli
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/bit_patterns.svg}
-\caption{Bit pattern evolution during Collatz steps, showing how a single bit change propagates through the transformation. The three stages (original, after ×3, after ÷2τ) demonstrate the avalanche effect.}
+\includegraphics[width=0.8\textwidth]{figures/bit_patterns.pdf}
+\caption{Bit pattern analysis showing the avalanche effect when dividing by $2^\tau$.}
 \label{fig:bit_patterns}
 \end{figure}
 
@@ -55,8 +55,8 @@ The compression phase, governed by $\tau(n)$, plays a crucial role in forcing de
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{figures/compression_ratio.svg}
-\caption{Visualization of the compression ratio in Collatz steps. The input bits are systematically compressed through the three-phase transformation, resulting in a ratio less than 1.}
+\includegraphics[width=0.8\textwidth]{figures/compression_ratio.pdf}
+\caption{Compression ratio analysis.}
 \label{fig:compression_ratio}
 \end{figure}
 
@@ -65,6 +65,12 @@ For random odd $n$, the probability that $\tau(n) = k$ is approximately $2^{-k}$
 \end{theorem}
 
 This geometric distribution ensures that large compression events occur with positive probability, forcing eventual descent. The empirical distribution of $\tau$ values, shown in Figure \ref{fig:tau_distribution}, provides strong support for this theoretical prediction.
+
+Variable $\tau$ values (2-4) causing additional compression
+
+The trailing bit pattern determines $\tau$ through:
+
+Track occurs when carry chain length $\geq$ 2
 
 \subsection{Cryptographic Properties}
 

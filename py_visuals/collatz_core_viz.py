@@ -42,9 +42,10 @@ def create_transformation_diagram(output_path="figures/transformation_phases.svg
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor="black",
         edgecolor="none",
@@ -96,9 +97,10 @@ def plot_trajectory_tree(
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor="black",
         edgecolor="none",
@@ -298,9 +300,10 @@ def create_bit_pattern_visualization(n_bits=8, output_path="figures/bit_patterns
 
     # Save figure
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    output_path = output_path.replace(".svg", ".pdf")
     plt.savefig(
         output_path,
-        format="svg",
+        format="pdf",
         bbox_inches="tight",
         facecolor=colors["bg"],
         edgecolor="none",
