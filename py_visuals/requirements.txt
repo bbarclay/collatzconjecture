@@ -1,0 +1,10 @@
+matplotlib>=3.7.1
+seaborn>=0.12.2
+numpy>=1.24.3
+plotly>=5.14.1
+svgwrite>=1.4.3
+networkx>=3.1
+pandas>=2.0.2
+scipy>=1.10.1
+drawSvg>=2.0.0
+colour>=0.1.5 

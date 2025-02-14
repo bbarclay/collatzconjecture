@@ -2,7 +2,14 @@
 
 \subsection{$\tau$-Distribution}
 
-The distribution of $\tau$ values is fundamental to understanding the Collatz function's behavior:
+The distribution of $\tau$ values is fundamental to understanding the Collatz function's behavior. Figure \ref{fig:tau_distribution} provides empirical evidence for our theoretical predictions.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/tau_distribution.svg}
+\caption{Distribution of $\tau$ values showing geometric decay. The blue histogram shows empirical frequencies, while the red dashed line represents the theoretical prediction $P(\tau = k) = 2^{-k}$.}
+\label{fig:tau_distribution}
+\end{figure}
 
 \begin{theorem}[$\tau$-Distribution]\label{thm:tau_dist}
 For odd integers $n$, the probability that $\tau(n) = k$ is $2^{-k} + O(n^{-1/2})$.
@@ -30,7 +37,14 @@ This property is crucial for ergodic theory arguments:
 
 \subsection{Ergodic Properties}
 
-The measure-preserving property leads to ergodic behavior:
+The measure-preserving property leads to ergodic behavior, beautifully visualized in Figure \ref{fig:ergodic_property}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/ergodic_property.svg}
+\caption{Visualization of ergodic behavior in phase space. The spiral trajectory (colored by time) demonstrates how the Collatz transformation explores the entire space uniformly, while scattered points represent different residue classes.}
+\label{fig:ergodic_property}
+\end{figure}
 
 \begin{theorem}[Ergodicity]\label{thm:ergodic}
 The Collatz transformation is ergodic with respect to the natural density.
@@ -43,7 +57,7 @@ Consequences include:
 \item No non-trivial invariant sets exist
 \end{enumerate}
 
-This ergodicity ensures that large $\tau$ events must occur infinitely often in typical orbits. 
+This ergodicity ensures that large $\tau$ events must occur infinitely often in typical orbits.
 
 \subsection{Enhanced Measure-Theoretic Analysis}
 
@@ -117,20 +131,22 @@ This implies:
 \subsection{Vertical Structure Analysis}
 
 \begin{theorem}[Vertical Structure]\label{thm:vertical}
-The vertical structure of trajectories exhibits:
+The vertical structure of trajectories exhibits systematic patterns, as shown in Figure \ref{fig:vertical_structure}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/vertical_structure.svg}
+\caption{Vertical structure of Collatz trajectories. The logarithmic plot reveals systematic spacing between descent events, with color gradients representing the progression of steps.}
+\label{fig:vertical_structure}
+\end{figure}
+
+The key features include:
 \begin{enumerate}
 \item Uniform distribution in residue classes
 \item Logarithmic spacing between major descent events
 \item Controlled growth rates between descents
 \end{enumerate}
 \end{theorem}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{entropy/vertical_structure.png}
-\caption{Vertical structure of Collatz trajectories showing uniform distribution in residue classes and logarithmic spacing between major descent events.}
-\label{fig:vertical_structure}
-\end{figure}
 
 \subsection{Compression Distribution Analysis}
 

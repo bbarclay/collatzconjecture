@@ -2,7 +2,14 @@
 
 \subsection{Entropy Analysis}
 
-The information-theoretic perspective provides crucial insights into the Collatz function's behavior:
+The information-theoretic perspective provides crucial insights into the Collatz function's behavior. Figure \ref{fig:entropy_reduction} visualizes how entropy systematically decreases during Collatz iterations.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/entropy_reduction.svg}
+\caption{Entropy reduction per Collatz step. The color gradient represents the magnitude of entropy change, with blue indicating reduction and red indicating temporary increases. The dashed line at y=0 highlights the overall negative trend.}
+\label{fig:entropy_reduction}
+\end{figure}
 
 \begin{theorem}[Entropy Reduction]\label{thm:entropy}
 For odd integers $n$, the expected change in entropy after one iteration is negative.
@@ -26,7 +33,7 @@ The average compression ratio per iteration is:
 \]
 \end{theorem}
 
-This implies that information is lost on average during each iteration.
+This implies that information is lost on average during each iteration, as visualized in Figure \ref{fig:compression_ratio}.
 
 \subsection{Global Convergence}
 
@@ -46,7 +53,16 @@ Key components of the proof:
 
 \subsection{Bit Pattern Analysis}
 
-The bit pattern analysis reveals:
+The bit pattern analysis reveals systematic transformation, as shown in Figure \ref{fig:bit_evolution}:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/bit_evolution.svg}
+\caption{Detailed visualization of bit pattern evolution in a Collatz sequence. The heatmap shows how bits are transformed and mixed through successive iterations, with darker colors representing 1s and lighter colors representing 0s.}
+\label{fig:bit_evolution}
+\end{figure}
+
+The patterns demonstrate:
 \begin{enumerate}
 \item Regular bit patterns are destroyed by multiplication by 3
 \item Variable $\tau$ values (2-4) causing additional compression
