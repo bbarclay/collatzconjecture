@@ -1,0 +1,7 @@
+setup.py
+collatzcrypto.egg-info/PKG-INFO
+collatzcrypto.egg-info/SOURCES.txt
+collatzcrypto.egg-info/dependency_links.txt
+collatzcrypto.egg-info/requires.txt
+collatzcrypto.egg-info/top_level.txt
+tests/test_collatz.py

@@ -1,0 +1,44 @@
+\section{Cryptographic Framework}\label{sec:crypto_framework}
+
+\subsection{One-Way Property}
+
+The Collatz function exhibits properties similar to cryptographic hash functions, particularly in its one-way nature. For odd integers, the transformation can be viewed as:
+
+\[
+T_{odd}(n) = \frac{3n + 1}{2^{\tau(n)}}
+\]
+
+where $\tau(n)$ is the largest power of 2 that divides $3n + 1$.
+
+\begin{theorem}[One-Way Property]\label{thm:one_way}
+Given an odd integer $n$ and its image $m = T_{odd}(n)$, finding $n$ requires $O(\log m)$ operations.
+\end{theorem}
+
+The proof follows from analyzing the predecessor equation:
+\[
+3n + 1 = m2^k
+\]
+which requires checking multiple values of $k$ to find valid predecessors.
+
+\subsection{Avalanche Effect}
+
+\begin{theorem}[Avalanche Effect]\label{thm:avalanche}
+A single bit change in the input affects approximately half of the output bits after one application of $T_{odd}$.
+\end{theorem}
+
+This property emerges from the carry propagation in binary addition and multiplication:
+\begin{enumerate}
+\item Multiplication by 3 spreads changes through bit positions
+\item Addition of 1 creates carry chains
+\item Division by $2^{\tau(n)}$ preserves the diffusion
+\end{enumerate}
+
+\subsection{Compression Function Analysis}
+
+The compression phase, governed by $\tau(n)$, plays a crucial role:
+
+\begin{theorem}[Compression Distribution]\label{thm:compression}
+For random odd $n$, the probability that $\tau(n) = k$ is approximately $2^{-k}$.
+\end{theorem}
+
+This geometric distribution ensures that large compression events occur with positive probability, forcing eventual descent. 

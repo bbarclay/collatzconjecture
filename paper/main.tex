@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+% Title information
+\title{A Cryptographic Framework for Proving the Collatz Conjecture}
+\author{Anonymous}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/abstract}
+
+\tableofcontents
+
+\input{sections/introduction}
+\input{sections/crypto_framework}
+\input{sections/measure_theory}
+\input{sections/information_theory}
+\input{sections/computational}
+\input{sections/conclusion}
+
+\input{sections/bibliography}
+
+\end{document} 

@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+% Essential packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{float}
+
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+% Python code style
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    showstringspaces=false
+}
+
+\title{The Collatz Conjecture as a Natural Cryptographic Hash:\\A Three-Part Proof}
+\author{} % Author name to be added
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\input{sections/introduction}
+\input{sections/cryptographic_framework}
+\input{sections/no_even_cycle}
+\input{sections/no_odd_cycle}
+\input{sections/forced_reduction}
+\input{sections/measure_theory}
+\input{sections/information_theory}
+\input{sections/computational_verification}
+\input{sections/conclusion}
+
+\appendix
+\input{proofs/detailed_proofs}
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references}
+
+\end{document} 

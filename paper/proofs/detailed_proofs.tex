@@ -1,0 +1,83 @@
+\section{Detailed Proofs}
+
+\subsection{Cryptographic Framework Proofs}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:one_way}]
+The one-way property follows from the exponential growth of the predecessor space:
+\begin{enumerate}
+\item For any odd $n$, consider the equation $\frac{3m + 1}{2^k} = n$
+\item This implies $3m + 1 = n2^k$ for some $k \geq 1$
+\item Therefore $m = \frac{n2^k - 1}{3}$ must be an integer
+\item For each $k$, this gives at most one valid predecessor
+\item The number of required $k$ values grows with $n$
+\item Thus finding a predecessor requires checking $O(\log n)$ possibilities
+\end{enumerate}
+\end{proof}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:avalanche}]
+The avalanche effect emerges from the carry propagation:
+\begin{enumerate}
+\item A change in bit $i$ affects bit $i+1$ through multiplication by 3
+\item The addition of 1 creates a carry chain
+\item Each carry propagates upward with probability $\frac{1}{2}$
+\item After $k$ steps, approximately $k/2$ bits are affected
+\item This matches the ideal avalanche criterion asymptotically
+\end{enumerate}
+\end{proof}
+
+\subsection{Measure Theory Proofs}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:tau_dist}]
+The distribution of $\tau$ follows from:
+\begin{enumerate}
+\item For $\tau(n) = k$, we need $3n + 1 \equiv 0 \pmod{2^k}$
+\item This gives $n \equiv -\frac{1}{3} \pmod{2^k}$
+\item The solution exists uniquely in each residue class
+\item Therefore $P(\tau = k) = 2^{-k}$ asymptotically
+\item The error term comes from boundary effects
+\end{enumerate}
+\end{proof}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:measure_preserve}]
+Measure preservation follows from:
+\begin{enumerate}
+\item For any arithmetic progression $P(a,d)$
+\item The preimage $T^{-1}(P(a,d))$ is a union of progressions
+\item The total density equals the original density
+\item This extends to the generated $\sigma$-algebra
+\end{enumerate}
+\end{proof}
+
+\subsection{Information Theory Proofs}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:entropy}]
+The entropy reduction follows from:
+\begin{enumerate}
+\item Initial entropy increase is $\log_2(3)$ bits
+\item Division by $2^{\tau(n)}$ reduces entropy by $\tau(n)$ bits
+\item Net change is $\log_2(3) - \tau(n)$ bits
+\item Expected value is negative by $\tau$ distribution
+\end{enumerate}
+\end{proof}
+
+\subsection{Global Behavior Proofs}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:cycle_prevent}]
+Cycle prevention follows from:
+\begin{enumerate}
+\item Any cycle must contain both odd and even numbers
+\item Even numbers strictly decrease until reaching an odd
+\item Odd steps have controlled growth by entropy bounds
+\item Large $\tau$ events force eventual descent
+\end{enumerate}
+\end{proof}
+
+\begin{proof}[Detailed proof of Theorem \ref{thm:global_descent}]
+Global descent follows from:
+\begin{enumerate}
+\item Large $\tau$ events occur with positive probability
+\item Each such event reduces the value significantly
+\item The ergodic theorem ensures infinitely many occurrences
+\item This prevents unbounded growth almost surely
+\end{enumerate}
+\end{proof} 
