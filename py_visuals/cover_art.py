@@ -1,7 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
-from matplotlib.patches import Circle, Rectangle, FancyArrowPatch
+from matplotlib.patches import Circle, Rectangle, FancyArrowPatch, PathPatch
+import mpl_toolkits.mplot3d.art3d as art3d
+from matplotlib.text import TextPath
+from matplotlib.transforms import Affine2D
 import seaborn as sns
 from pathlib import Path
 
@@ -9,187 +12,217 @@ from pathlib import Path
 def create_cover_art(output_path="figures/cover_art.svg"):
     """Create an epic cover visualization combining key aspects of the proof."""
     # Create figure with dark theme
-    fig = plt.figure(figsize=(20, 15))
+    fig = plt.figure(figsize=(24, 18))
     plt.style.use("dark_background")
 
-    # Custom colors
+    # Enhanced color palette inspired by modern cybersecurity visuals
     colors = {
-        "bg": "#0D1117",  # GitHub dark theme
-        "primary": "#58A6FF",  # Bright blue
-        "secondary": "#FF6B6B",  # Coral red
-        "accent": "#4ECDC4",  # Turquoise
-        "highlight": "#FFD93D",  # Gold
+        "bg": "#0D1117",  # Deep space black
+        "primary": "#58A6FF",  # Electric blue
+        "secondary": "#FF6B6B",  # Neon coral
+        "accent": "#4ECDC4",  # Cyber mint
+        "highlight": "#FFD93D",  # Digital gold
+        "matrix": "#00FF41",  # Matrix green
+        "purple": "#BD93F9",  # Cyber purple
+        "warning": "#FF5555",  # Alert red
     }
 
     # Set background color
     fig.patch.set_facecolor(colors["bg"])
 
     # Create a 2x2 grid with spacing
-    gs = plt.GridSpec(2, 2, figure=fig, hspace=0.3, wspace=0.3)
+    gs = plt.GridSpec(2, 2, figure=fig, hspace=0.4, wspace=0.3)
 
-    # 1. Top left: Trajectory spiral showing convergence
-    ax1 = fig.add_subplot(gs[0, 0], projection="polar")
+    # 1. Top left: Enhanced Spiral Convergence with 3D effect
+    ax1 = fig.add_subplot(gs[0, 0], projection="3d")
     ax1.set_facecolor(colors["bg"])
 
-    # Generate enhanced spiral data
-    theta = np.linspace(0, 15 * np.pi, 2000)
-    r = np.exp(-theta / 12) * (1 + 0.3 * np.sin(5 * theta))
+    # Generate 3D spiral data
+    theta = np.linspace(0, 12 * np.pi, 2000)
+    r = np.exp(-theta / 15)
+    x = r * np.cos(theta)
+    y = r * np.sin(theta)
+    z = np.exp(-theta / 8)  # Height component
+
+    # Create color gradient
     colors_spiral = plt.cm.viridis(np.linspace(0, 1, len(theta)))
 
-    # Plot spiral with enhanced color gradient and glow effect
-    points = np.array([theta, r]).T.reshape(-1, 1, 2)
-    segments = np.concatenate([points[:-1], points[1:]], axis=1)
-    lc = LineCollection(segments, colors=colors_spiral, alpha=0.8, linewidth=2)
-    ax1.add_collection(lc)
+    # Plot 3D spiral with glow effect
+    for alpha in [0.1, 0.2, 0.3]:
+        ax1.plot(x, y, z, color=colors["primary"], alpha=alpha, linewidth=3)
+    ax1.plot(x, y, z, color=colors["primary"], alpha=0.8, linewidth=2)
 
-    # Add glowing convergence point
-    for size in [150, 100, 50]:
-        ax1.scatter(0, 0, c=colors["secondary"], s=size, alpha=0.3, zorder=5)
-    ax1.scatter(0, 0, c=colors["secondary"], s=30, zorder=6, label="Convergence (1)")
+    # Add key points with glowing spheres
+    key_points = [(0, 0, 0), (0.2, 0, 0.1), (0.1, 0.1, 0.05)]
+    labels = ["1", "2", "4"]
+    for point, label in zip(key_points, labels):
+        # Glow effect
+        for size in [100, 80, 60, 40]:
+            ax1.scatter(*point, s=size, color=colors["highlight"], alpha=0.2)
+        ax1.scatter(*point, s=30, color=colors["highlight"], alpha=1)
+        ax1.text(point[0], point[1], point[2], label, color=colors["highlight"])
 
-    # Add cycle points with connecting arrows
-    cycle_theta = [0, np.pi / 6, np.pi / 3]
-    cycle_r = [0.2, 0.15, 0.1]
-    ax1.scatter(
-        cycle_theta, cycle_r, c=colors["highlight"], s=50, zorder=5, label="4→2→1 Cycle"
+    # Add mathematical annotations
+    ax1.text2D(
+        0.05,
+        0.95,
+        "$T_{odd}(n) = \\frac{3n + 1}{2^{\\tau(n)}}$",
+        transform=ax1.transAxes,
+        fontsize=12,
+        color=colors["accent"],
     )
 
-    for i in range(len(cycle_theta) - 1):
-        ax1.arrow(
-            cycle_theta[i],
-            cycle_r[i],
-            (cycle_theta[i + 1] - cycle_theta[i]) / 2,
-            (cycle_r[i + 1] - cycle_r[i]) / 2,
-            head_width=0.05,
-            head_length=0.05,
-            fc=colors["highlight"],
-            ec=colors["highlight"],
-            alpha=0.7,
-        )
+    ax1.set_title(
+        "Global Convergence & Cycle Structure", pad=20, fontsize=16, color="white"
+    )
 
-    ax1.set_title("Global Convergence", pad=20, fontsize=16, color="white")
-    ax1.legend(loc="upper right", framealpha=0.3)
+    # Remove axes for cleaner look
+    ax1.set_axis_off()
 
-    # 2. Top right: Enhanced bit pattern avalanche
+    # 2. Top right: Enhanced Bit Pattern Cascade
     ax2 = fig.add_subplot(gs[0, 1])
     ax2.set_facecolor(colors["bg"])
 
-    n_steps, n_bits = 25, 32
+    # Generate sophisticated bit pattern data
+    n_steps, n_bits = 30, 40
     patterns = np.zeros((n_steps, n_bits))
-    patterns[0, n_bits // 2] = 1  # Initial single bit
 
-    # Generate more realistic avalanche
+    # Create interesting initial pattern
+    patterns[0, n_bits // 2 - 5 : n_bits // 2 + 5] = 1
+
+    # Generate avalanche effect
     for i in range(1, n_steps):
         prev_pattern = patterns[i - 1]
         new_pattern = np.zeros(n_bits)
         for j in range(n_bits):
             if prev_pattern[j] == 1:
-                # Affect neighboring bits with decreasing probability
-                for k in range(max(0, j - 3), min(n_bits, j + 4)):
-                    if np.random.random() < 0.7 / (1 + abs(k - j)):
-                        new_pattern[k] = 1
-        patterns[i] = new_pattern
+                # Create sophisticated spreading pattern
+                spread = np.exp(-np.abs(np.arange(n_bits) - j) / 3)
+                new_pattern += spread * (np.random.random(n_bits) < 0.7)
+        patterns[i] = (new_pattern > 0.3).astype(float)
 
-    # Plot enhanced heatmap
-    sns.heatmap(patterns, cmap="magma", cbar=False, ax=ax2)
-    ax2.set_title("Avalanche Effect", pad=20, fontsize=16)
-    ax2.set_xlabel("Bit Position", fontsize=12)
-    ax2.set_ylabel("Step", fontsize=12)
+    # Create custom colormap with cyber theme
+    custom_cmap = plt.cm.RdYlBu_r
 
-    # 3. Bottom left: Enhanced entropy reduction
+    # Plot enhanced heatmap with glow effect
+    sns.heatmap(patterns, cmap=custom_cmap, cbar=False, ax=ax2)
+
+    # Add information theory equation
+    ax2.text(
+        0.05,
+        0.95,
+        "$\\Delta H = \\log_2(3) - \\tau(n) + \\epsilon(n)$",
+        transform=ax2.transAxes,
+        fontsize=12,
+        color=colors["accent"],
+    )
+
+    ax2.set_title("Bit Pattern Avalanche & Information Flow", pad=20, fontsize=16)
+
+    # 3. Bottom left: Enhanced Phase Space
     ax3 = fig.add_subplot(gs[1, 0])
     ax3.set_facecolor(colors["bg"])
 
-    # Generate more interesting entropy data
-    x = np.linspace(0, 10, 300)
-    base = 5 * np.exp(-x / 3)
-    oscillation = 0.5 * np.sin(2 * x) * np.exp(-x / 4)
+    # Generate enhanced phase space data
+    t = np.linspace(0, 30, 3000)
+    x = np.cos(t) * np.exp(-t / 20) * (1 + 0.2 * np.sin(3 * t))
+    y = np.sin(t) * np.exp(-t / 20) * (1 + 0.2 * np.cos(3 * t))
+
+    # Create gradient effect
+    points = np.array([x, y]).T.reshape(-1, 1, 2)
+    segments = np.concatenate([points[:-1], points[1:]], axis=1)
+    lc = LineCollection(segments, cmap="viridis", alpha=0.8, linewidth=2)
+    lc.set_array(np.linspace(0, 1, len(segments)))
+    ax3.add_collection(lc)
+
+    # Add measure theory equation
+    ax3.text(
+        0.05,
+        0.95,
+        "$d(T^{-1}(A)) = d(A)$",
+        transform=ax3.transAxes,
+        fontsize=12,
+        color=colors["accent"],
+    )
+
+    # Add glowing boundary
+    theta = np.linspace(0, 2 * np.pi, 200)
+    for width in [3, 2, 1]:
+        ax3.plot(
+            np.cos(theta),
+            np.sin(theta),
+            "--",
+            color=colors["purple"],
+            alpha=0.3,
+            linewidth=width,
+        )
+
+    ax3.set_title("Ergodic Behavior & Measure Preservation", pad=20, fontsize=16)
+    ax3.set_aspect("equal")
+    ax3.set_axis_off()
+
+    # 4. Bottom right: Entropy Cascade
+    ax4 = fig.add_subplot(gs[1, 1])
+    ax4.set_facecolor(colors["bg"])
+
+    # Generate entropy cascade data
+    x = np.linspace(0, 15, 500)
+    base = 8 * np.exp(-x / 5)
+    oscillation = 0.8 * np.sin(2 * x) * np.exp(-x / 6)
     noise = np.random.normal(0, 0.15, len(x))
     entropy = base + oscillation + noise
 
-    # Create gradient fill
+    # Create gradient fill with cyber theme
     gradient = np.linspace(0, 1, len(x))
     for i in range(len(x) - 1):
-        ax3.fill_between(
+        ax4.fill_between(
             x[i : i + 2],
             entropy[i : i + 2],
             alpha=0.3,
             color=plt.cm.viridis(gradient[i]),
         )
 
-    # Plot main line with glow effect
-    for alpha in [0.1, 0.2, 0.3]:
-        ax3.plot(x, entropy, color=colors["accent"], alpha=alpha, linewidth=4)
-    ax3.plot(x, entropy, color=colors["accent"], alpha=0.8, linewidth=2)
+    # Add multiple layers for glow effect
+    alphas = [0.1, 0.2, 0.3, 0.8]
+    widths = [4, 3, 2, 1.5]
+    for alpha, width in zip(alphas, widths):
+        ax4.plot(x, entropy, color=colors["accent"], alpha=alpha, linewidth=width)
 
-    ax3.set_title("Entropy Reduction", pad=20, fontsize=16)
-    ax3.set_xlabel("Time", fontsize=12)
-    ax3.set_ylabel("Entropy", fontsize=12)
-    ax3.grid(True, alpha=0.2)
+    # Add probability equation
+    ax4.text(
+        0.05,
+        0.95,
+        "$P(\\tau = k) = 2^{-k} + O(n^{-1/2})$",
+        transform=ax4.transAxes,
+        fontsize=12,
+        color=colors["accent"],
+    )
 
-    # 4. Bottom right: Enhanced phase space
-    ax4 = fig.add_subplot(gs[1, 1])
-    ax4.set_facecolor(colors["bg"])
+    ax4.set_title("Entropy Reduction & Compression", pad=20, fontsize=16)
+    ax4.set_axis_off()
 
-    # Generate enhanced trajectory data
-    t = np.linspace(0, 25, 2000)
-    x = np.cos(t) * np.exp(-t / 15) * (1 + 0.2 * np.sin(3 * t))
-    y = np.sin(t) * np.exp(-t / 15) * (1 + 0.2 * np.cos(3 * t))
-
-    # Plot trajectory with gradient
-    points = np.array([x, y]).T.reshape(-1, 1, 2)
-    segments = np.concatenate([points[:-1], points[1:]], axis=1)
-    lc = LineCollection(segments, cmap="viridis", alpha=0.8, linewidth=2)
-    lc.set_array(np.linspace(0, 1, len(segments)))
-    ax4.add_collection(lc)
-
-    # Add enhanced phase space boundary
-    theta = np.linspace(0, 2 * np.pi, 100)
-    circle_x = np.cos(theta)
-    circle_y = np.sin(theta)
-    ax4.plot(circle_x, circle_y, "--", color="white", alpha=0.3, linewidth=1)
-
-    # Add glowing convergence point
-    for size in [150, 100, 50]:
-        ax4.scatter(0, 0, c=colors["secondary"], s=size, alpha=0.3, zorder=5)
-    ax4.scatter(0, 0, c=colors["secondary"], s=30, zorder=6, label="Convergence")
-
-    # Add enhanced cycle visualization
-    cycle_x = [0.1, 0.05, 0.025]
-    cycle_y = [0, 0.05, 0.025]
-    ax4.scatter(cycle_x, cycle_y, c=colors["highlight"], s=50, label="4→2→1 Cycle")
-
-    # Add glowing arrows between cycle points
-    for i in range(len(cycle_x) - 1):
-        arrow = FancyArrowPatch(
-            (cycle_x[i], cycle_y[i]),
-            (cycle_x[i + 1], cycle_y[i + 1]),
-            arrowstyle="->",
-            mutation_scale=15,
-            color=colors["highlight"],
-            alpha=0.7,
-        )
-        ax4.add_patch(arrow)
-
-    ax4.set_title("Phase Space (No Larger Cycles)", pad=20, fontsize=16)
-    ax4.set_xlabel("Re(z)", fontsize=12)
-    ax4.set_ylabel("Im(z)", fontsize=12)
-    ax4.grid(True, alpha=0.2)
-    ax4.legend(loc="upper right", framealpha=0.3)
-    ax4.set_xlim(-1.2, 1.2)
-    ax4.set_ylim(-1.2, 1.2)
-    ax4.set_aspect("equal")
-
-    # Overall title with enhanced styling
+    # Main title with enhanced styling
     plt.suptitle(
         "The Collatz Conjecture:\nA Cryptographic Perspective",
-        fontsize=28,
+        fontsize=32,
         y=0.95,
         color="white",
         fontweight="bold",
+        family="monospace",
     )
 
-    # Save figure with high quality
+    # Add subtitle
+    plt.figtext(
+        0.5,
+        0.91,
+        "Bridging Number Theory and Modern Cryptography",
+        ha="center",
+        color=colors["accent"],
+        fontsize=18,
+        family="monospace",
+    )
+
+    # Save with high quality
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(
         output_path,

@@ -136,7 +136,7 @@ If you use this work in your research, please cite:
 ```bibtex
 @article{barclay2024collatz,
   title={The Collatz Conjecture: A Cryptographic Perspective},
-  author={Barclay, Bob},
+  author={Barclay, Brandon},
   journal={arXiv preprint},
   year={2024}
 }
@@ -152,5 +152,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Contact 📧
 
-- **Author**: Bob Barclay
+- **Author**: Brandon Barclay
 - **GitHub**: [@bbarclay](https://github.com/bbarclay) 
