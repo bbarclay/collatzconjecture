@@ -680,4 +680,110 @@ LaTeX Warning: Label `fig:bit_evolution' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    C
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+ (/usr/local/texlive/2024basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count326
+\scratchdimen=\dimen266
+\scratchbox=\box69
+\nofMPsegments=\count327
+\nofMParguments=\count328
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen267
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
+\everyMPtoPDFconversion=\toks46
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
+ty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 35.
+ (./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+\c@lstlisting=\count332
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./sections/abstract.tex [1
+
+{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (
+./main.toc [2] [3])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ (./sections/introduction.tex
+
+LaTeX Warning: File `figures/transformation_phases.pdf' not found on input line
+ 23.
+
+
+! Package pdftex.def Error: File `figures/transformation_phases.pdf' not found:
+ using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...twidth]{figures/transformation_phases.pdf}
+                                                  
+? 
+! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.23 ...twidth]{figures/transformation_phases.pdf}
+                                                  
+? cd ../py_visuals && python collatz_core_viz.py && python measure_theory_viz.p
+y && python information_theory_viz.py && cd ../paper && pdflatex main.tex && bi
+btex main && pdflatex main.tex && pdflatex main.tex
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? 
+! Interruption.
+<argument> ...ot found: using draft setting}\@ehc 
+                                                  \Gin@drafttrue \fi 
+l.23 ...twidth]{figures/transformation_phases.pdf}
+                                                  
+? 
+! Interruption.
+\@secondoftwo #1#2->#2
+                      
+l.23 ...twidth]{figures/transformation_phases.pdf}
+             

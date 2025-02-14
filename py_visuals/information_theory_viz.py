@@ -4,6 +4,10 @@ import seaborn as sns
 from pathlib import Path
 import os
 
+# Create figures directory if it doesn't exist
+figures_dir = Path("figures")
+figures_dir.mkdir(parents=True, exist_ok=True)
+
 
 def plot_entropy_reduction(max_n=100, output_path="figures/entropy_reduction.svg"):
     """Create a visualization of entropy reduction in Collatz steps."""

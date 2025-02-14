@@ -5,6 +5,10 @@ import seaborn as sns
 from pathlib import Path
 import os
 
+# Create figures directory if it doesn't exist
+figures_dir = Path("figures")
+figures_dir.mkdir(parents=True, exist_ok=True)
+
 
 def plot_tau_distribution(max_n=1000, output_path="figures/tau_distribution.svg"):
     """Create a visualization of τ distribution."""

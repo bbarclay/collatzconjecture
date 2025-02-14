@@ -1,7 +1,12 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
+
+# Create figures directory if it doesn't exist
+figures_dir = Path("figures")
+figures_dir.mkdir(parents=True, exist_ok=True)
 
 
 def create_transformation_diagram(output_path="figures/transformation_phases.svg"):
