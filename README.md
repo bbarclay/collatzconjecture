@@ -6,11 +6,11 @@
 
 ## TLDR 🚀
 
-We prove the Collatz conjecture by establishing a novel connection between number theory and cryptography. Our approach demonstrates how three fundamental aspects work together to trap every number into having only one possible fate - reaching 1:
+I prove the Collatz conjecture by establishing a novel connection between number theory and cryptography. My approach demonstrates how three fundamental aspects work together to trap every number into having only one possible fate—reaching 1:
 
 1. **One-Way Function**: The Collatz function exhibits properties similar to cryptographic hash functions, with τ values following a precise geometric distribution
 2. **Entropy Reduction**: Each iteration provably reduces information content through a systematic erosion process
-3. **Measure Theory**: We prove the existence of a unique attractor (4→2→1 cycle) through ergodic mixing properties
+3. **Measure Theory**: I prove the existence of a unique attractor (4→2→1 cycle) through ergodic mixing properties
 
 Key results:
 - ✅ Proved convergence to 4→2→1 cycle
@@ -20,7 +20,7 @@ Key results:
 
 ## Mathematical Overview 🔢
 
-Our proof rests on three key mathematical pillars that together provide a complete solution:
+My proof rests on three key mathematical pillars that together provide a complete solution:
 
 ### 1. Cryptographic Properties
 
@@ -30,7 +30,7 @@ For odd integers $n$, the Collatz function can be written as:
 T_{odd}(n) = \frac{3n + 1}{2^{\tau(n)}}
 ```
 
-where $\tau(n)$ is the largest power of 2 dividing $3n + 1$. We prove:
+where $\tau(n)$ is the largest power of 2 dividing $3n + 1$. I prove:
 
 ```math
 P(\tau = k) = 2^{-k} + O(n^{-1/2})
@@ -56,7 +56,7 @@ Even though multiplication by 3 adds information (+1.58 bits), the division by 2
 
 ### 3. Measure-Theoretic Framework
 
-We prove the transformation preserves natural density:
+I prove the transformation preserves natural density:
 
 ```math
 d(T^{-1}(A)) = d(A)
@@ -68,7 +68,7 @@ for sets $A$ of arithmetic progressions, leading to ergodic behavior:
 \lim_{n \to \infty} d(T^{-n}(A) \cap B) = d(A)d(B)
 ```
 
-This mixing property ensures numbers get uniformly distributed across residue classes, precluding any possibility of escape paths or special subsets that could avoid descent.
+This mixing property ensures numbers are uniformly distributed across residue classes, precluding any possibility of escape paths or special subsets that could avoid descent.
 
 These three components combine to prove:
 1. No cycles exist beyond {4,2,1} (cryptographic properties)
@@ -77,11 +77,11 @@ These three components combine to prove:
 
 ## Experimental Validation
 
-Our extensive numerical testing confirms all three aspects:
+My extensive numerical testing confirms all three aspects:
 
-- **τ Distribution:** Values follow P(τ = k) ≈ 2^(-k) with remarkable precision
+- **τ Distribution:** Values follow $P(\tau = k) \approx 2^{-k}$ with remarkable precision
 - **Information Loss:** Every trajectory shows negative average entropy change
-- **Ergodic Mixing:** Perfect uniformity in distribution mod 2^k
+- **Ergodic Mixing:** Perfect uniformity in distribution mod $2^k$
 - **Edge Cases:** Even carefully constructed numbers designed to maximize τ or height conform to predictions
 
 ## Key Visualizations 📊
@@ -98,7 +98,7 @@ The visualization shows how bit patterns evolve during Collatz iterations, demon
   <img src="figures/vertical_structure.svg" alt="Vertical Structure" width="80%">
 </p>
 
-This plot reveals the systematic descent patterns in trajectories, providing evidence for our measure-theoretic arguments.
+This plot reveals the systematic descent patterns in trajectories, providing evidence for the measure-theoretic arguments.
 
 ### Information Theory
 <p align="center">
@@ -140,13 +140,13 @@ python py_visuals/cover_art.py
 ## Key Contributions 🎯
 
 1. **Novel Framework**: First approach combining cryptography, information theory, and measure theory
-2. **Visual Proof**: Intuitive visualizations supporting theoretical arguments
+2. **Visual Proof**: Intuitive visualizations supporting the theoretical arguments
 3. **Quantitative Bounds**: Explicit bounds on convergence rates
 4. **Practical Applications**: Potential applications in cryptographic hash function design
 
 ## Future Work 🔮
 
-- **Extended Analysis:** Further formalize the error bounds and examine ε(n) in greater detail
+- **Extended Analysis:** Further formalize the error bounds and examine $\epsilon(n)$ in greater detail
 - **Visualization:** Enhance graphical representations of trajectories, entropy changes, and τ distributions
 - **Broader Applications:** Apply this multifaceted approach to other dynamic systems and cryptographic algorithms
 
