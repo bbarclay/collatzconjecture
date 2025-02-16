@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-% Packages
+% Essential packages
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -11,8 +11,9 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{float}
 
-% Define tau and geq commands
+% Define custom commands
 \newcommand{\tauvar}{\tau}
 \newcommand{\geqvar}{\geq}
 
@@ -20,33 +21,60 @@
 \graphicspath{{figures/}{entropy/}}
 
 % Theorem environments
+\theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
 \newtheorem{remark}[theorem]{Remark}
 
-% Title information
+% Python code style
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    showstringspaces=false
+}
+
 \title{The Collatz Conjecture: A Cryptographic Framework}
 \author{Brandon Barclay}
 \date{\today}
 
 \begin{document}
-
 \maketitle
 
+\begin{abstract}
 \input{sections/abstract}
+\end{abstract}
 
 \tableofcontents
+\newpage
 
 \input{sections/introduction}
 \input{sections/crypto_framework}
+\input{sections/no_even_cycle}
+\input{sections/bakers_bounds}
+\input{sections/forced_reduction}
 \input{sections/measure_theory}
 \input{sections/information_theory}
 \input{sections/computational}
 \input{sections/conclusion}
 
-\input{sections/bibliography}
+\appendix
+\input{proofs/detailed_proofs}
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references}
 
 \end{document} 

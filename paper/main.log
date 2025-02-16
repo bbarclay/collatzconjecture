@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  14 FEB 2025 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  16 FEB 2025 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,6 +656,9 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 \c@theorem=\count324
 
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
 ef
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
@@ -680,24 +683,24 @@ LaTeX Warning: Label `fig:bit_evolution' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
  (/usr/local/texlive/2024basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count326
@@ -722,68 +725,529 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 54.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 \c@lstlisting=\count332
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
 
 
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
 
 
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./sections/abstract.tex [1
+(./sections/abstract.tex
+Overfull \hbox (3.50665pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/10.95 Col-latz con-jec-ture through an in-no-va-tive cryp-to-graph
+ic lens,
+ []
 
-{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (
-./main.toc [2] [3])
+
+Overfull \hbox (4.51938pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/m/n/10.95 We present a com-pre-hen-sive proof of the Col-latz Con-je
+c-ture through
+ []
+
+
+Overfull \hbox (3.03282pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10.95 tions of $\OML/cmm/m/it/10.95 ^^\$\OT1/cmr/m/n/10.95 -distri
+bution, cryp-to-graphic se-cu-rity re-duc-tions, and measure-
+ []
+
+[1
+
+{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (6.65077pt too wide) in paragraph at lines 30--31
+[]\OT1/cmr/bx/n/10.95 Complexity-theoretic \OT1/cmr/m/n/10.95 ram-i-fi-ca-tions
+, link-ing Col-latz ir-re-versibil-
+ []
+
+) (./main.toc [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- (./sections/introduction.tex
+ [4] (./sections/introduction.tex
+<figures/transformation_phases.pdf, id=382, 508.24567pt x 399.42287pt>
+File: figures/transformation_phases.pdf Graphic file (type pdf)
+<use figures/transformation_phases.pdf>
+Package pdftex.def Info: figures/transformation_phases.pdf  used on input line 
+23.
+(pdftex.def)             Requested size: 312.00119pt x 245.20782pt.
 
-LaTeX Warning: File `figures/transformation_phases.pdf' not found on input line
- 23.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-! Package pdftex.def Error: File `figures/transformation_phases.pdf' not found:
- using draft setting.
+Overfull \hbox (2.96814pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/n/12 tions, par-tic-u-larly in the in-ter-play be-tween ex-pan-sion 
+and com-pres-sion phases.
+ []
+
+<figures/bit_evolution.pdf, id=384, 514.50342pt x 399.42287pt>
+File: figures/bit_evolution.pdf Graphic file (type pdf)
+<use figures/bit_evolution.pdf>
+Package pdftex.def Info: figures/bit_evolution.pdf  used on input line 39.
+(pdftex.def)             Requested size: 312.00119pt x 242.21533pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 \item M
+            easure-theoretic bounds on $\tau(n)$ distribution (Figure \ref{f...
+ <./figures/transformation_phases.pdf>]
+<figures/ergodic_property.pdf, id=445, 522.1727pt x 399.42287pt>
+File: figures/ergodic_property.pdf Graphic file (type pdf)
+<use figures/ergodic_property.pdf>
+Package pdftex.def Info: figures/ergodic_property.pdf  used on input line 60.
+(pdftex.def)             Requested size: 312.00119pt x 238.66212pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/tau_distribution.pdf, id=446, 504.40318pt x 399.42287pt>
+File: figures/tau_distribution.pdf Graphic file (type pdf)
+<use figures/tau_distribution.pdf>
+Package pdftex.def Info: figures/tau_distribution.pdf  used on input line 67.
+(pdftex.def)             Requested size: 312.00119pt x 247.07281pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `sec:no_odd_cycle' on page 7 undefined on input line 7
+3.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 7 undefined on input line 73.
+
+
+<figures/vertical_structure.pdf, id=454, 504.40318pt x 399.42287pt>
+File: figures/vertical_structure.pdf Graphic file (type pdf)
+<use figures/vertical_structure.pdf>
+Package pdftex.def Info: figures/vertical_structure.pdf  used on input line 77.
+
+(pdftex.def)             Requested size: 312.00119pt x 247.07281pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/crypto_framework.tex [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 
+     <./figures/bit_evolution.pdf>]
+<figures/trajectory_tree.pdf, id=506, 620.25636pt x 510.71867pt>
+File: figures/trajectory_tree.pdf Graphic file (type pdf)
+<use figures/trajectory_tree.pdf>
+Package pdftex.def Info: figures/trajectory_tree.pdf  used on input line 15.
+(pdftex.def)             Requested size: 312.00119pt x 256.9017pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.34 \end{theorem}
+                   <./figures/ergodic_property.pdf>]
+<figures/bit_patterns.pdf, id=559, 504.40318pt x 399.42287pt>
+File: figures/bit_patterns.pdf Graphic file (type pdf)
+<use figures/bit_patterns.pdf>
+Package pdftex.def Info: figures/bit_patterns.pdf  used on input line 40.
+(pdftex.def)             Requested size: 312.00119pt x 247.07281pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/compression_ratio.pdf, id=561, 512.07246pt x 399.42287pt>
+File: figures/compression_ratio.pdf Graphic file (type pdf)
+<use figures/compression_ratio.pdf>
+Package pdftex.def Info: figures/compression_ratio.pdf  used on input line 58.
+(pdftex.def)             Requested size: 312.00119pt x 243.36723pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.65 \end{theorem}
+                   <./figures/tau_distribution.pdf>] [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.82 \item \textbf
+                  {Compression:} Information is systematically reduced <./figur
+es/vertical_structure.pdf>]) (./sections/no_even_cycle.tex [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.13 \]
+        <./figures/trajectory_tree.pdf>] [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.28 \end{itemize}
+                   <./figures/bit_patterns.pdf>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 36.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46                 return
+                            <./figures/compression_ratio.pdf>]
+Overfull \hbox (8.61794pt too wide) in paragraph at lines 65--66
+[][]\OT1/cmr/bx/n/12 Corollary 3.3 \OT1/cmr/m/n/12 (Max-i-mum Even Value)\OT1/c
+mr/bx/n/12 . []\OT1/cmr/m/it/12 In any po-ten-tial cy-cle be-yond $\OMS/cmsy/m/
+n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \
+OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g$\OT1/cmr/m/it/12 ,
+ []
+
+) (./sections/bakers_bounds.tex [14]
+<figures/power_gaps.pdf, id=817, 504.40318pt x 399.42287pt>
+File: figures/power_gaps.pdf Graphic file (type pdf)
+<use figures/power_gaps.pdf>
+Package pdftex.def Info: figures/power_gaps.pdf  used on input line 39.
+(pdftex.def)             Requested size: 312.00119pt x 247.07281pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15]
+Overfull \hbox (1.31645pt too wide) in paragraph at lines 49--50
+[]\OT1/cmr/bx/n/12 Practical Bar-rier\OT1/cmr/m/n/12 : The +1 term forces mix-i
+ng be-tween residue classes,
+ []
+
+) (./sections/forced_reduction.tex [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.4 
+     <./figures/power_gaps.pdf>] [17]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+[18]
+Overfull \hbox (59.4577pt too wide) in paragraph at lines 87--88
+\OT1/cmr/m/n/12 tion through a com-pan-ion Jupyter note-book (\OT1/cmtt/m/n/12 
+forced[]reduction[]verification.ipynb\OT1/cmr/m/n/12 ).
+ []
+
+[19]) (./sections/measure_theory.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+File: figures/tau_distribution.pdf Graphic file (type pdf)
+<use figures/tau_distribution.pdf>
+Package pdftex.def Info: figures/tau_distribution.pdf  used on input line 9.
+(pdftex.def)             Requested size: 312.00119pt x 247.07281pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (4.72093pt too wide) in paragraph at lines 15--16
+[][]\OT1/cmr/bx/n/12 Theorem 6.1 \OT1/cmr/m/n/12 ($\OML/cmm/m/it/12 ^^\$\OT1/cm
+r/m/n/12 -Distribution)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 For odd in-te-gers
+ $\OML/cmm/m/it/12 n$\OT1/cmr/m/it/12 , the prob-a-bil-ity that $\OML/cmm/m/it/
+12 ^^\\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ) =
+ []
+
+[20]
+File: figures/ergodic_property.pdf Graphic file (type pdf)
+<use figures/ergodic_property.pdf>
+Package pdftex.def Info: figures/ergodic_property.pdf  used on input line 44.
+(pdftex.def)             Requested size: 312.00119pt x 238.66212pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.61 
+     ] [22
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.81 \item D
+            ensity exactly $2^{-k}$ for primary progressions] [23]
+File: figures/vertical_structure.pdf Graphic file (type pdf)
+<use figures/vertical_structure.pdf>
+Package pdftex.def Info: figures/vertical_structure.pdf  used on input line 138
+.
+(pdftex.def)             Requested size: 312.00119pt x 247.07281pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: File `entropy/compression_distribution.png' not found on input l
+ine 164.
+
+
+! Package pdftex.def Error: File `entropy/compression_distribution.png' not fou
+nd: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 ...twidth]{figures/transformation_phases.pdf}
+l.164 ...th]{entropy/compression_distribution.png}
                                                   
-? 
-! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
-l.23 ...twidth]{figures/transformation_phases.pdf}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/information_theory.tex [24]
+<figures/entropy_reduction.pdf, id=966, 500.57639pt x 399.42287pt>
+File: figures/entropy_reduction.pdf Graphic file (type pdf)
+<use figures/entropy_reduction.pdf>
+Package pdftex.def Info: figures/entropy_reduction.pdf  used on input line 9.
+(pdftex.def)             Requested size: 312.00119pt x 248.95607pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29 \begin{theorem}[Compression Ratio]
+                                       \label{thm:compression_ratio}] [26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.42 \begin{theorem}[Global Descent]
+                                    \label{thm:global_descent}]
+File: figures/bit_evolution.pdf Graphic file (type pdf)
+<use figures/bit_evolution.pdf>
+Package pdftex.def Info: figures/bit_evolution.pdf  used on input line 60.
+(pdftex.def)             Requested size: 312.00119pt x 242.21533pt.
+ [27
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.63 \end{figure}
+                  <./figures/entropy_reduction.pdf>] [28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 \begin{itemize}
+                    ] [29]
+
+LaTeX Warning: File `figures/bit_prediction.pdf' not found on input line 163.
+
+
+! Package pdftex.def Error: File `figures/bit_prediction.pdf' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
                                                   
-? cd ../py_visuals && python collatz_core_viz.py && python measure_theory_viz.p
-y && python information_theory_viz.py && cd ../paper && pdflatex main.tex && bi
-btex main && pdflatex main.tex && pdflatex main.tex
-Type <return> to proceed, S to scroll future error messages,
-R to run without stopping, Q to run quietly,
-I to insert something, E to edit your file,
-H for help, X to quit.
-? 
-! Interruption.
-<argument> ...ot found: using draft setting}\@ehc 
-                                                  \Gin@drafttrue \fi 
-l.23 ...twidth]{figures/transformation_phases.pdf}
+l.163 ....8\textwidth]{figures/bit_prediction.pdf}
                                                   
-? 
-! Interruption.
-\@secondoftwo #1#2->#2
-                      
-l.23 ...twidth]{figures/transformation_phases.pdf}
-             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] [31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.176 \]
+        ]
+Overfull \hbox (1.17409pt too wide) in paragraph at lines 181--182
+[][]\OT1/cmr/bx/n/12 Proposition 7.10 \OT1/cmr/m/n/12 (En-hanced En-tropy Prop-
+er-ties)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 The bi-nary en-tropy $\OML/cmm/m/
+it/12 H\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )$
+ []
+
+[32] [33] [34] [35] [36] [37]) (./sections/computational.tex [38]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+7.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [39]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+[40] [41]
+
+LaTeX Warning: File `entropy/bit_evolution_detailed.png' not found on input lin
+e 135.
+
+
+! Package pdftex.def Error: File `entropy/bit_evolution_detailed.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 ...idth]{entropy/bit_evolution_detailed.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/conclusion.tex [42] [43
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.36 
+     ]
+Overfull \hbox (3.78203pt too wide) in paragraph at lines 41--42
+[]\OT1/cmr/m/n/12 Extending the cryp-to-graphic frame-work to other number-theo
+retic prob-
+ []
+
+
+LaTeX Warning: File `figures/bit_evolution.svg' not found on input line 53.
+
+
+! LaTeX Error: Unknown graphics extension: .svg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 ...=0.8\textwidth]{figures/bit_evolution.svg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./proofs/detailed_proofs.tex [44
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.8 \item F
+           or any odd $n$, consider the equation $\frac{3m + 1}{2^k} = n$]
+[45]
+
+LaTeX Warning: Reference `thm:cycle_prevent' on page 46 undefined on input line
+ 65.
+
+[46])
+No file main.bbl.
+[47] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 8DA68D092567CA86930DE2858A995D66;11722.
+ ) 
+Here is how much of TeX's memory you used:
+ 23499 strings out of 475567
+ 426210 string characters out of 5777889
+ 2162187 words of memory out of 5000000
+ 44768 multiletter control sequences out of 15000+600000
+ 571754 words of font info for 87 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 84i,10n,87p,1140b,2153s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/bobbarclay/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/tctt1095.600pk> </Users/bobbarclay/Library/texlive/2024basic/texmf-var/f
+onts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </Users/bobbarclay/Library/texlive/2
+024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/local/texli
+ve/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
+exlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loc
+al/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
+sr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi6.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024basic/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024basi
+c/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive
+/2024basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (47 pages, 486204 bytes).
+PDF statistics:
+ 1563 PDF objects out of 1728 (max. 8388607)
+ 1123 compressed objects within 12 object streams
+ 481 named destinations out of 1000 (max. 500000)
+ 599 words of extra memory for PDF output out of 10000 (max. 10000000)
+

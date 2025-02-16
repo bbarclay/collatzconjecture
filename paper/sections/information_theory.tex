@@ -73,8 +73,31 @@ The trailing bit pattern determines $\tau$ through:
 \begin{enumerate}
 \item Single 1-bit: $\tau = 2$
 \item Two 1-bits: $\tau = 3$
-\item Long carry track occurs when carry chain length $\geq 2$
+\item Lower track occurs when carry chain length $\geq 2$
 \end{enumerate}
+
+This explains both the binary pattern statistics and the resulting compression behavior.
+
+\begin{theorem}[Entropy Framework]
+\label{thm:entropy}
+The Collatz transformation systematically reduces information through:
+\begin{itemize}
+\item Average of 1.45 trailing ones
+\item Significant compression: $\Delta B(n) = \lfloor \log_2(3) \rfloor - 2.01$ (mean)
+\item Variable $\tau$ values (2-4) causing additional compression
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+The trailing bit pattern determines $\tau$ through:
+\begin{enumerate}
+\item More trailing ones $\rightarrow$ more carry propagation in 3n+1
+\item Carry propagation affects divisibility by 2
+\item Upper track occurs when carry chain length = 1
+\item Lower track occurs when carry chain length $\geq 2$
+\end{enumerate}
+This explains both the binary pattern statistics and the resulting compression behavior.
+\end{proof}
 
 \subsection{Computational Verification}
 
@@ -142,7 +165,7 @@ These results support but are not required for our global theoretical claims.
 \label{fig:bit_prediction}
 \end{figure}
 
-Figure \ref{fig:bit_prediction} provides strong visual confirmation of our theoretical predictions. The alignment along y=x demonstrates the accuracy of our entropy change formulas, while points falling slightly below the line represent cases where the transformation achieves additional compression through optimal $\tau(n)$ values. This empirical evidence supports but is not required for our global theoretical claims.
+Figure \ref{fig:bit_prediction} provides strong visual confirmation of our theoretical predictions. The alignment along y=x demonstrates the accuracy of our entropy change formulas, while points falling slightly below the line represent cases where the transformation achieves additional compression through optimal $\tau$ values. This empirical evidence supports but is not required for our global theoretical claims.
 
 \subsection{Entropy Framework}
 
@@ -419,18 +442,18 @@ The compression behavior of the Collatz transformation is determined by the trai
    \begin{itemize}
    \item Average of 1.45 trailing ones
    \item Significant compression: $\Delta B(n) = \lfloor \log_2(3) \rfloor - 2.01$ (mean)
-   \item Variable τ values (2-4) causing additional compression
+   \item Variable $\tau$ values (2-4) causing additional compression
    \end{itemize}
 \end{enumerate}
 \end{theorem}
 
 \begin{proof}
-The trailing bit pattern determines τ through:
+The trailing bit pattern determines $\tau$ through:
 \begin{enumerate}
-\item More trailing ones → more carry propagation in 3n+1
+\item More trailing ones $\rightarrow$ more carry propagation in 3n+1
 \item Carry propagation affects divisibility by 2
 \item Upper track occurs when carry chain length = 1
-\item Lower track occurs when carry chain length ≥ 2
+\item Lower track occurs when carry chain length $\geq 2$
 \end{enumerate}
 This explains both the binary pattern statistics and the resulting compression behavior.
 \end{proof} 
