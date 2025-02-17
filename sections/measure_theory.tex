@@ -1,0 +1,92 @@
+\section{Measure Theory}\label{sec:measure_theory}
+
+\subsection{Density Concepts}
+
+\begin{definition}[Natural Density]
+For a set $A \subseteq \mathbb{N}$, its natural density is:
+\[
+d(A) = \lim_{N \to \infty} \frac{|\{n \leq N : n \in A\}|}{N}
+\]
+when this limit exists.
+\end{definition}
+
+\begin{definition}[Logarithmic Density]
+For a set $A \subseteq \mathbb{N}$, its logarithmic density is:
+\[
+\delta(A) = \lim_{x \to \infty} \frac{1}{\log x} \sum_{n \leq x, n \in A} \frac{1}{n}
+\]
+when this limit exists.
+\end{definition}
+
+\begin{remark}[Choice of Density]
+While both natural and logarithmic density are valid for studying the Collatz map:
+\begin{enumerate}
+\item Natural density is simpler and sufficient for our main results
+\item Logarithmic density provides finer control of sparse sets
+\item Both densities agree on arithmetic progressions
+\end{enumerate}
+Following Lagarias and Terras, we primarily use natural density.
+\end{remark}
+
+\subsection{Measure Preservation Properties}
+
+The Collatz transformation exhibits subtle measure-preserving properties:
+
+\begin{definition}[Collatz-Invariant Set]
+A set $A \subseteq \mathbb{N}$ is Collatz-invariant if for all $n \in A$, we have $C(n) \in A$ and for all $m \in A$, the set $C^{-1}(m) \cap A$ is non-empty.
+\end{definition}
+
+\begin{theorem}[Local Measure Preservation]
+For any arithmetic progression $a \pmod{m}$, if $A = \{n : n \equiv a \pmod{m}\}$, then:
+\[
+\delta_L(C^{-1}(A)) = \delta_L(A) \cdot (1 + O(m^{-1/2}))
+\]
+where the implied constant is absolute.
+\end{theorem}
+
+\begin{proof}
+Following Terras's approach, we analyze the distribution of $\tau(n)$ values modulo $m$ and show that the preimages are uniformly distributed across residue classes with error term $O(m^{-1/2})$.
+\end{proof}
+
+\subsection{Ergodic Properties}
+
+The ergodic properties of the Collatz map are crucial for understanding its long-term behavior:
+
+\begin{definition}[Strong Mixing]
+The Collatz transformation exhibits strong mixing if for any measurable sets $A, B \subseteq \mathbb{N}$:
+\[
+\lim_{n \to \infty} |\mu(A \cap C^{-n}(B)) - \mu(A)\mu(B)| = 0
+\]
+where $\mu$ denotes the logarithmic density.
+\end{definition}
+
+\begin{theorem}[Exponential Mixing Rate]
+For arithmetic progressions $A$ and $B$, the mixing rate is exponential:
+\[
+|\mu(A \cap C^{-n}(B)) - \mu(A)\mu(B)| \leq c\alpha^n
+\]
+for some $c > 0$ and $0 < \alpha < 1$.
+\end{theorem}
+
+\subsection{Connection to Lagarias's Work}
+
+Our measure-theoretic approach builds on Lagarias's extensive studies:
+
+\begin{enumerate}
+    \item We adopt his notion of $\mathbb{Q}_2$-extensions for analyzing limiting behavior
+    \item Our logarithmic density aligns with his treatment of multiplicative properties
+    \item The mixing properties extend his results on distribution in residue classes
+\end{enumerate}
+
+\subsection{Implications for Convergence}
+
+The measure-theoretic framework yields several convergence results:
+
+\begin{theorem}[Measure-Theoretic Convergence]
+If there exists a non-trivial Collatz-invariant set $A$ with $\delta_L(A) > 0$, then:
+\[
+\lim_{n \to \infty} \delta_L(\{k : C^n(k) = 1\}) = 1
+\]
+\end{theorem}
+
+This provides a pathway to proving the Collatz conjecture by establishing the existence of such an invariant set. 

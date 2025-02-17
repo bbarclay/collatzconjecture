@@ -15,57 +15,79 @@ class MeasureTheoryVerifier:
     def __init__(self):
         self.verifier = CollatzVerifier()
 
+    def compute_logarithmic_density(self, N: int, A: List[int]) -> float:
+        """
+        Compute logarithmic density for a set of numbers up to N.
+        This is more suitable than natural density for Collatz analysis
+        as it better handles the multiplicative structure.
+        """
+        if not A or N <= 0:
+            return 0.0
+        
+        log_sum_A = sum(1/math.log(max(n, 2)) for n in A if n <= N and n % 2 == 1)
+        log_sum_total = sum(1/math.log(max(n, 2)) for n in range(1, N+1, 2))
+        
+        return log_sum_A / log_sum_total if log_sum_total > 0 else 0.0
+
     def compute_base_measure(self, N: int, A: List[int]) -> float:
-        """Compute base measure for a set of numbers up to N"""
+        """
+        Compute natural density for a set of numbers up to N.
+        Used for comparison with logarithmic density.
+        """
         odd_count = (N + 1) // 2  # Total odd numbers up to N
         set_count = sum(1 for n in A if n <= N and n % 2 == 1)
         return set_count / odd_count
 
     def verify_tau_distribution(
-        self, limit: int = 100000
+        self, limit: int = 100000, error_bound: float = 0.1
     ) -> Dict[str, Dict[str, float]]:
         """
         Verify the theoretical distribution of τ including:
-        1. Basic 2^(-k) distribution
-        2. O(n^(-1/2)) error term
-        3. Residue patterns modulo 3
+        1. Basic 2^(-k) distribution with explicit error bounds
+        2. O(n^(-1/2)) error term with constants
+        3. Residue patterns modulo 3 with confidence intervals
         """
         results = {
-            "basic": {},  # Basic 2^(-k) distribution
-            "residue_3": {},  # Patterns modulo 3
-            "error_term": {},  # O(n^(-1/2)) analysis
+            "basic": {},
+            "residue_3": {},
+            "error_term": {},
+            "confidence_intervals": {}
         }
 
         # Track tau values by residue mod 3
         tau_by_residue = {0: {}, 1: {}, 2: {}}
         total_by_residue = {0: 0, 1: 0, 2: 0}
 
-        # Collect data
+        # Collect data with error bounds
         for n in range(1, limit + 1, 2):
             tau = self.verifier.find_tau(n)
             r = n % 3
 
-            # Update basic counts
             tau_by_residue[r][tau] = tau_by_residue[r].get(tau, 0) + 1
             total_by_residue[r] += 1
 
-        # Analyze basic distribution
+        # Analyze with explicit error bounds
         for r in range(3):
             if total_by_residue[r] == 0:
                 continue
 
-            # Compute empirical probabilities for this residue
             probs = {k: v / total_by_residue[r] for k, v in tau_by_residue[r].items()}
-
-            # Compare with theoretical 2^(-k)
             theoretical = {k: 2 ** (-k) for k in probs.keys()}
+            
+            # Compute confidence intervals (95%)
+            sample_size = total_by_residue[r]
+            confidence_intervals = {}
+            for k, p in probs.items():
+                margin = 1.96 * math.sqrt(p * (1-p) / sample_size)
+                confidence_intervals[k] = (max(0, p - margin), min(1, p + margin))
 
-            # Compute error terms
+            # Explicit error bounds
             errors = {k: abs(probs[k] - theoretical[k]) for k in probs.keys()}
-
-            # Check if errors are O(n^(-1/2))
             n_sqrt = math.sqrt(limit)
             scaled_errors = {k: err * n_sqrt for k, err in errors.items()}
+            
+            # Terras-style error bound
+            terras_bound = math.log(limit) / math.sqrt(limit)
 
             results["basic"][f"residue_{r}"] = {
                 "empirical": probs,
@@ -74,7 +96,9 @@ class MeasureTheoryVerifier:
                 "scaled_errors": scaled_errors,
                 "max_error": max(errors.values()),
                 "max_scaled_error": max(scaled_errors.values()),
-                "sample_size": total_by_residue[r],
+                "terras_bound": terras_bound,
+                "sample_size": sample_size,
+                "confidence_intervals": confidence_intervals
             }
 
         # Analyze residue patterns

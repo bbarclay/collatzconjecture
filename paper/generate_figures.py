@@ -1,7 +1,85 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from typing import Tuple, List, Dict
+import multiprocessing as mp
+from tqdm import tqdm
 
-def save_figure(fig, name):
+def process_range(start: int, end: int, tau_func) -> List[float]:
+    """Process a range of numbers for entropy changes"""
+    changes = []
+    for n in range(start, end, 2):
+        tau = tau_func(n)
+        next_n = (3 * n + 1) // (2 ** tau)
+        h1 = np.log2(n)
+        h2 = np.log2(next_n)
+        changes.append(h2 - h1)
+    return changes
+
+class CollatzVerifier:
+    """Enhanced verification of Collatz properties with error analysis"""
+    
+    def __init__(self, max_n: int = 10**6, num_samples: int = 10**5):
+        self.max_n = max_n
+        self.num_samples = num_samples
+        
+    def compute_tau(self, n: int) -> int:
+        """Compute tau(n) = number of trailing zeros in 3n+1"""
+        if n % 2 == 0:
+            raise ValueError("n must be odd")
+        m = 3 * n + 1
+        tau = 0
+        while m % 2 == 0:
+            tau += 1
+            m //= 2
+        return tau
+    
+    def verify_tau_distribution(self) -> Dict[int, float]:
+        """Verify the geometric distribution of tau values"""
+        taus = []
+        for n in tqdm(range(1, self.max_n, 2)):
+            taus.append(self.compute_tau(n))
+        
+        tau_counts = {}
+        for tau in taus:
+            tau_counts[tau] = tau_counts.get(tau, 0) + 1
+            
+        total = len(taus)
+        tau_probs = {k: v/total for k, v in tau_counts.items()}
+        
+        # Compute error from theoretical geometric distribution
+        theoretical = {k: 2**(-k) for k in tau_probs.keys()}
+        errors = {k: abs(tau_probs[k] - theoretical[k]) for k in tau_probs.keys()}
+        
+        return {
+            'empirical': tau_probs,
+            'theoretical': theoretical,
+            'errors': errors,
+            'max_error': max(errors.values())
+        }
+    
+    def verify_entropy_reduction(self) -> Dict[str, float]:
+        """Verify entropy reduction properties with error analysis"""
+        entropy_changes = []
+        
+        # Process in chunks without multiprocessing for simplicity
+        chunk_size = 10000
+        for start in tqdm(range(1, self.max_n, chunk_size)):
+            end = min(start + chunk_size, self.max_n)
+            changes = process_range(start, end, self.compute_tau)
+            entropy_changes.extend(changes)
+            
+        return {
+            'mean_change': np.mean(entropy_changes),
+            'std_dev': np.std(entropy_changes),
+            'max_increase': max(entropy_changes),
+            'min_decrease': min(entropy_changes),
+            'theoretical_mean': np.log2(3) - 2,  # From Lemma 4.2
+            'error': abs(np.mean(entropy_changes) - (np.log2(3) - 2))
+        }
+
+def save_figure(fig, name: str) -> None:
+    """Save figure with high resolution and tight layout"""
+    fig.tight_layout()
     fig.savefig(f'figures/{name}.pdf', bbox_inches='tight', dpi=300)
     plt.close(fig)
 
@@ -11,17 +89,35 @@ plt.rcParams['axes.grid'] = True
 plt.rcParams['font.size'] = 12
 plt.rcParams['lines.linewidth'] = 2
 
-# Tau distribution
-def plot_tau_distribution():
-    fig, ax = plt.subplots()
-    x = np.arange(1, 11)
-    y_empirical = 0.5 ** x
-    ax.bar(x, y_empirical, alpha=0.6, label='Empirical')
-    ax.plot(x, y_empirical, 'r--', label='Theoretical')
-    ax.set_xlabel('τ value')
-    ax.set_ylabel('Frequency')
-    ax.set_title('Distribution of τ Values')
-    ax.legend()
+# Enhanced plotting functions with error bars and confidence intervals
+def plot_tau_distribution() -> None:
+    verifier = CollatzVerifier()
+    results = verifier.verify_tau_distribution()
+    
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
+    
+    # Main distribution plot
+    x = list(results['empirical'].keys())
+    y_emp = list(results['empirical'].values())
+    y_theo = list(results['theoretical'].values())
+    
+    ax1.bar(x, y_emp, alpha=0.6, label='Empirical')
+    ax1.plot(x, y_theo, 'r--', label='Theoretical')
+    ax1.set_xlabel('τ value')
+    ax1.set_ylabel('Frequency')
+    ax1.set_title('Distribution of τ Values')
+    ax1.legend()
+    
+    # Error analysis plot
+    errors = list(results['errors'].values())
+    ax2.semilogy(x, errors, 'k-', label='Error')
+    ax2.axhline(y=1/np.sqrt(verifier.max_n), color='r', linestyle='--',
+                label='Theoretical Error Bound')
+    ax2.set_xlabel('τ value')
+    ax2.set_ylabel('Absolute Error')
+    ax2.set_title('Error Analysis')
+    ax2.legend()
+    
     save_figure(fig, 'tau_distribution')
 
 # Entropy reduction
@@ -157,6 +253,21 @@ def plot_power_gaps():
     save_figure(fig, 'power_gaps')
 
 if __name__ == '__main__':
+    # Run enhanced verification
+    verifier = CollatzVerifier()
+    tau_results = verifier.verify_tau_distribution()
+    entropy_results = verifier.verify_entropy_reduction()
+    
+    print("Tau Distribution Analysis:")
+    print(f"Max Error: {tau_results['max_error']:.2e}")
+    print(f"Theoretical Bound: {1/np.sqrt(verifier.max_n):.2e}")
+    
+    print("\nEntropy Reduction Analysis:")
+    print(f"Mean Change: {entropy_results['mean_change']:.4f}")
+    print(f"Theoretical Mean: {entropy_results['theoretical_mean']:.4f}")
+    print(f"Error: {entropy_results['error']:.2e}")
+    
+    # Generate all figures with enhanced analysis
     plot_tau_distribution()
     plot_entropy_reduction()
     plot_transformation_phases()

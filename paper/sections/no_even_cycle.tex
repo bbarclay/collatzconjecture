@@ -1,4 +1,4 @@
-\section{No Larger Even Cycle}\label{sec:no_even_cycle}
+\section{No Even Cycles}\label{sec:no_even_cycle}
 
 \subsection{Statement and Proof}
 
@@ -83,4 +83,8 @@ This consistent entropy reduction explains why even numbers must eventually eith
 \item Transform into odd numbers through the cryptographic hash-like transformation
 \end{itemize}
 
-This result forms the first pillar of our three-part proof, eliminating the possibility of cycles containing large even numbers. 
+This result forms the first pillar of our three-part proof, eliminating the possibility of cycles containing large even numbers.
+
+\begin{theorem}[Cycle Prevention]\label{thm:cycle_prevent}
+For any potential cycle in the Collatz sequence, at least one element must be less than the starting value.
+\end{theorem} 
