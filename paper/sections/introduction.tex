@@ -9,7 +9,7 @@ n/2 & \text{if } n \text{ is even} \\
 \end{cases}
 \]
 
-Despite its simple formulation, the conjecture has resisted proof for over 80 years. Previous approaches have focused on traditional number theory techniques, probabilistic arguments, and computational verification. Our work introduces a novel framework that combines:
+Despite its simple formulation, the conjecture has resisted proof for over 80 years~\cite{lagarias2010ultimate}. Previous approaches have focused on traditional number theory techniques~\cite{simons2019collatz}, probabilistic arguments~\cite{tao2019almost}, and computational verification~\cite{oliveira2010computational}. Our work introduces a novel framework that combines:
 
 \begin{enumerate}
 \item Cryptographic framework (Section \ref{sec:crypto_framework})
@@ -37,7 +37,7 @@ The key insight is interpreting the $3n+1$ operation on odd integers as a three-
 
 This interpretation reveals deep connections to cryptographic hash functions, particularly in the interplay between expansion and compression phases. As visualized in Figure \ref{fig:bit_evolution_intro}, the bit patterns undergo systematic transformation that exhibits properties analogous to cryptographic hash functions.
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/bit_evolution.pdf}
 \caption{Bit Evolution}
@@ -58,14 +58,14 @@ This paper makes several key contributions:
 \item Comprehensive computational verification framework
 \end{enumerate}
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/ergodic_property.pdf}
 \caption{Ergodic Property}
 \label{fig:ergodic_property_intro}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/tau_distribution.pdf}
 \caption{Tau Distribution}
@@ -75,9 +75,23 @@ This paper makes several key contributions:
 \subsection{Paper Organization}
 The remainder of this paper is organized as follows. Section \ref{sec:crypto_framework} introduces our cryptographic framework. Section \ref{sec:no_even_cycle} proves the impossibility of larger cycles. Section \ref{sec:bakers_bounds} presents Baker's bounds and their implications. Section \ref{sec:forced_reduction} demonstrates why all trajectories must eventually descend, supported by our vertical structure analysis (Figure \ref{fig:vertical_structure_intro}). Sections \ref{sec:measure_theory} and \ref{sec:information_theory} provide theoretical foundations. Section \ref{sec:computational} presents computational verification, and Section \ref{sec:conclusion} concludes with implications and future work.
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/vertical_structure.pdf}
 \caption{Vertical Structure}
 \label{fig:vertical_structure_intro}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{py_visuals/figures/bit_patterns.pdf}
+\caption{Bit Patterns}
+\label{fig:bit_patterns_intro}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{py_visuals/figures/compression_ratio.pdf}
+\caption{Compression Ratio}
+\label{fig:compression_ratio_intro}
 \end{figure} 

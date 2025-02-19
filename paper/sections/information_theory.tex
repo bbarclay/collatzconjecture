@@ -33,7 +33,14 @@ The average compression ratio per iteration is:
 \]
 \end{theorem}
 
-This implies that information is lost on average during each iteration, as visualized in Figure \ref{fig:compression_ratio}.
+This implies that information is lost on average during each iteration, as visualized in Figure \ref{fig:compression_ratio_info}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{py_visuals/figures/compression_ratio.pdf}
+\caption{Compression ratio analysis from an information theory perspective.}
+\label{fig:compression_ratio_info}
+\end{figure}
 
 \subsection{Global Convergence}
 
@@ -53,13 +60,13 @@ Key components of the proof:
 
 \subsection{Bit Pattern Analysis}
 
-The bit pattern analysis reveals systematic transformation, as shown in Figure \ref{fig:bit_evolution}:
+The bit pattern analysis reveals systematic transformation, as shown in Figure \ref{fig:bit_patterns_info}:
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.8\textwidth]{py_visuals/figures/bit_evolution.pdf}
-\caption{Bit evolution patterns.}
-\label{fig:bit_evolution}
+\includegraphics[width=0.8\textwidth]{py_visuals/figures/bit_patterns.pdf}
+\caption{Bit pattern evolution from an information theory perspective.}
+\label{fig:bit_patterns_info}
 \end{figure}
 
 The patterns demonstrate:
@@ -162,10 +169,10 @@ These results support but are not required for our global theoretical claims.
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/bit_patterns.pdf}
 \caption{Bit prediction accuracy.}
-\label{fig:bit_prediction}
+\label{fig:bit_patterns}
 \end{figure}
 
-Figure \ref{fig:bit_prediction} provides strong visual confirmation of our theoretical predictions. The alignment along y=x demonstrates the accuracy of our entropy change formulas, while points falling slightly below the line represent cases where the transformation achieves additional compression through optimal $\tau$ values. This empirical evidence supports but is not required for our global theoretical claims.
+Figure \ref{fig:bit_patterns_info} provides strong visual confirmation of our theoretical predictions. The alignment along y=x demonstrates the accuracy of our entropy change formulas, while points falling slightly below the line represent cases where the transformation achieves additional compression through optimal $\tau$ values. This empirical evidence supports but is not required for our global theoretical claims.
 
 \subsection{Entropy Framework}
 

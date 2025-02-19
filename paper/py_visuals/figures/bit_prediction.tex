@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+\begin{axis}[
+    xlabel={Input Length (bits)},
+    ylabel={Prediction Accuracy},
+    title={Bit Prediction Analysis},
+    grid=major,
+    xmin=0, xmax=100,
+    ymin=0.4, ymax=1.0,
+    legend pos=south east
+]
+
+\addplot[smooth, thick, blue] coordinates {
+    (0, 0.5)
+    (20, 0.52)
+    (40, 0.51)
+    (60, 0.505)
+    (80, 0.502)
+    (100, 0.501)
+};
+
+\addplot[smooth, dashed, red] coordinates {
+    (0, 0.5)
+    (20, 0.5)
+    (40, 0.5)
+    (60, 0.5)
+    (80, 0.5)
+    (100, 0.5)
+};
+
+\legend{Observed, Random}
+\end{axis}
+\end{tikzpicture} 

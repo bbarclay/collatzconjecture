@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  16 FEB 2025 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.5)  19 FEB 2025 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,4 +670,563 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font I
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count326
+\scratchdimen=\dimen266
+\scratchbox=\box69
+\nofMPsegments=\count327
+\nofMParguments=\count328
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count329
+\MPscratchDim=\dimen267
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
+\everyMPtoPDFconversion=\toks46
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
+ty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring OFF on input line 54.
+ (./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+\c@lstlisting=\count332
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./sections/abstract.tex
+Overfull \hbox (3.50665pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/10.95 Col-latz con-jec-ture through an in-no-va-tive cryp-to-graph
+ic lens,
+ []
+
+
+Overfull \hbox (4.51938pt too wide) in paragraph at lines 10--11
+[]\OT1/cmr/m/n/10.95 We present a com-pre-hen-sive proof of the Col-latz Con-je
+c-ture through
+ []
+
+
+Overfull \hbox (3.03282pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10.95 tions of $\OML/cmm/m/it/10.95 ^^\$\OT1/cmr/m/n/10.95 -distri
+bution, cryp-to-graphic se-cu-rity re-duc-tions, and measure-
+ []
+
+[1
+
+{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (6.65077pt too wide) in paragraph at lines 30--31
+[]\OT1/cmr/bx/n/10.95 Complexity-theoretic \OT1/cmr/m/n/10.95 ram-i-fi-ca-tions
+, link-ing Col-latz ir-re-versibil-
+ []
+
+) (./main.toc [2] [3] [4])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [5] (./sections/introduction.tex
+<py_visuals/figures/transformation_phases.pdf, id=423, 566.26743pt x 421.02356p
+t>
+File: py_visuals/figures/transformation_phases.pdf Graphic file (type pdf)
+<use py_visuals/figures/transformation_phases.pdf>
+Package pdftex.def Info: py_visuals/figures/transformation_phases.pdf  used on 
+input line 26.
+(pdftex.def)             Requested size: 312.00119pt x 231.98125pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.96814pt too wide) in paragraph at lines 38--39
+\OT1/cmr/m/n/12 tions, par-tic-u-larly in the in-ter-play be-tween ex-pan-sion 
+and com-pres-sion phases.
+ []
+
+<py_visuals/figures/bit_evolution.pdf, id=425, 566.20157pt x 421.02356pt>
+File: py_visuals/figures/bit_evolution.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_evolution.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_evolution.pdf  used on input li
+ne 42.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.56 \item M
+            easure-theoretic bounds on $\tau(n)$ distribution (Figure \ref{f...
+ <./py_visuals/figures/transformation_phases.pdf>]
+<py_visuals/figures/ergodic_property.pdf, id=493, 566.1922pt x 421.02356pt>
+File: py_visuals/figures/ergodic_property.pdf Graphic file (type pdf)
+<use py_visuals/figures/ergodic_property.pdf>
+Package pdftex.def Info: py_visuals/figures/ergodic_property.pdf  used on input
+ line 63.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<py_visuals/figures/tau_distribution.pdf, id=494, 1072.10915pt x 421.02356pt>
+File: py_visuals/figures/tau_distribution.pdf Graphic file (type pdf)
+<use py_visuals/figures/tau_distribution.pdf>
+Package pdftex.def Info: py_visuals/figures/tau_distribution.pdf  used on input
+ line 70.
+(pdftex.def)             Requested size: 312.00119pt x 122.52412pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<py_visuals/figures/vertical_structure.pdf, id=504, 566.21915pt x 421.02356pt>
+File: py_visuals/figures/vertical_structure.pdf Graphic file (type pdf)
+<use py_visuals/figures/vertical_structure.pdf>
+Package pdftex.def Info: py_visuals/figures/vertical_structure.pdf  used on inp
+ut line 80.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<py_visuals/figures/bit_patterns.pdf, id=505, 566.21915pt x 421.02356pt>
+File: py_visuals/figures/bit_patterns.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_patterns.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_patterns.pdf  used on input lin
+e 87.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<py_visuals/figures/compression_ratio.pdf, id=506, 566.25493pt x 421.02356pt>
+File: py_visuals/figures/compression_ratio.pdf Graphic file (type pdf)
+<use py_visuals/figures/compression_ratio.pdf>
+Package pdftex.def Info: py_visuals/figures/compression_ratio.pdf  used on inpu
+t line 94.
+(pdftex.def)             Requested size: 312.00119pt x 231.98125pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/crypto_framework.tex [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 
+     <./py_visuals/figures/bit_evolution.pdf>]
+<py_visuals/figures/trajectory_tree.pdf, id=557, 710.75443pt x 565.56357pt>
+File: py_visuals/figures/trajectory_tree.pdf Graphic file (type pdf)
+<use py_visuals/figures/trajectory_tree.pdf>
+Package pdftex.def Info: py_visuals/figures/trajectory_tree.pdf  used on input 
+line 15.
+(pdftex.def)             Requested size: 312.00119pt x 248.2619pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.34 \end{theorem}
+                   <./py_visuals/figures/ergodic_property.pdf>]
+File: py_visuals/figures/bit_patterns.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_patterns.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_patterns.pdf  used on input lin
+e 40.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: py_visuals/figures/compression_ratio.pdf Graphic file (type pdf)
+<use py_visuals/figures/compression_ratio.pdf>
+Package pdftex.def Info: py_visuals/figures/compression_ratio.pdf  used on inpu
+t line 58.
+(pdftex.def)             Requested size: 312.00119pt x 231.98125pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.75 \subsection
+                {Cryptographic Properties} <./py_visuals/figures/tau_distributi
+on.pdf>]) (./sections/no_even_cycle.tex [11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.7 \end{theorem}
+                  <./py_visuals/figures/vertical_structure.pdf>] [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.25 \begin{itemize}
+                     <./py_visuals/figures/bit_patterns.pdf>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 36.
+ [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.41         for 
+                 _ in range(2*N): <./py_visuals/figures/compression_ratio.pdf>]
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.59 \item E
+            nter the cycle $\{4,2,1\}$, or <./py_visuals/figures/trajectory_tre
+e.pdf>]
+Overfull \hbox (8.61794pt too wide) in paragraph at lines 65--66
+[][]\OT1/cmr/bx/n/12 Corollary 3.3 \OT1/cmr/m/n/12 (Max-i-mum Even Value)\OT1/c
+mr/bx/n/12 . []\OT1/cmr/m/it/12 In any po-ten-tial cy-cle be-yond $\OMS/cmsy/m/
+n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \
+OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g$\OT1/cmr/m/it/12 ,
+ []
+
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.82 \item R
+            each the minimal cycle $\{4,2,1\}$, or])
+(./sections/no_odd_cycle.tex [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.9 \]
+      ] [17] [18]) (./sections/bakers_bounds.tex [19]
+File: py_visuals/figures/compression_ratio.pdf Graphic file (type pdf)
+<use py_visuals/figures/compression_ratio.pdf>
+Package pdftex.def Info: py_visuals/figures/compression_ratio.pdf  used on inpu
+t line 39.
+(pdftex.def)             Requested size: 312.00119pt x 231.98125pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.31645pt too wide) in paragraph at lines 49--50
+[]\OT1/cmr/bx/n/12 Practical Bar-rier\OT1/cmr/m/n/12 : The +1 term forces mix-i
+ng be-tween residue classes,
+ []
+
+) (./sections/forced_reduction.tex [20] [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.19 \end{theorem}
+                  ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 52.
+
+[22]
+Overfull \hbox (59.4577pt too wide) in paragraph at lines 87--88
+\OT1/cmr/m/n/12 tion through a com-pan-ion Jupyter note-book (\OT1/cmtt/m/n/12 
+forced[]reduction[]verification.ipynb\OT1/cmr/m/n/12 ).
+ []
+
+[23]) (./sections/measure_theory.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+File: py_visuals/figures/tau_distribution.pdf Graphic file (type pdf)
+<use py_visuals/figures/tau_distribution.pdf>
+Package pdftex.def Info: py_visuals/figures/tau_distribution.pdf  used on input
+ line 9.
+(pdftex.def)             Requested size: 312.00119pt x 122.52412pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (4.72093pt too wide) in paragraph at lines 15--16
+[][]\OT1/cmr/bx/n/12 Theorem 7.1 \OT1/cmr/m/n/12 ($\OML/cmm/m/it/12 ^^\$\OT1/cm
+r/m/n/12 -Distribution)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 For odd in-te-gers
+ $\OML/cmm/m/it/12 n$\OT1/cmr/m/it/12 , the prob-a-bil-ity that $\OML/cmm/m/it/
+12 ^^\\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ) =
+ []
+
+[24]
+File: py_visuals/figures/ergodic_property.pdf Graphic file (type pdf)
+<use py_visuals/figures/ergodic_property.pdf>
+Package pdftex.def Info: py_visuals/figures/ergodic_property.pdf  used on input
+ line 44.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.56 \item T
+            ime averages equal space averages] [26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.70 \end{enumerate}
+                    ] [27]
+File: py_visuals/figures/vertical_structure.pdf Graphic file (type pdf)
+<use py_visuals/figures/vertical_structure.pdf>
+Package pdftex.def Info: py_visuals/figures/vertical_structure.pdf  used on inp
+ut line 138.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: py_visuals/figures/compression_ratio.pdf Graphic file (type pdf)
+<use py_visuals/figures/compression_ratio.pdf>
+Package pdftex.def Info: py_visuals/figures/compression_ratio.pdf  used on inpu
+t line 164.
+(pdftex.def)             Requested size: 312.00119pt x 231.98125pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/information_theory.tex [28]
+<py_visuals/figures/entropy_reduction.pdf, id=1032, 566.322pt x 421.02356pt>
+File: py_visuals/figures/entropy_reduction.pdf Graphic file (type pdf)
+<use py_visuals/figures/entropy_reduction.pdf>
+Package pdftex.def Info: py_visuals/figures/entropy_reduction.pdf  used on inpu
+t line 9.
+(pdftex.def)             Requested size: 312.00119pt x 231.95555pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29 \begin{theorem}[Compression Ratio]
+                                       \label{thm:compression_ratio}]
+File: py_visuals/figures/compression_ratio.pdf Graphic file (type pdf)
+<use py_visuals/figures/compression_ratio.pdf>
+Package pdftex.def Info: py_visuals/figures/compression_ratio.pdf  used on inpu
+t line 40.
+(pdftex.def)             Requested size: 312.00119pt x 231.98125pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 \item T
+            he ergodic theorem ensures infinitely many occurrences]
+File: py_visuals/figures/bit_patterns.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_patterns.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_patterns.pdf  used on input lin
+e 67.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.77 \end{enumerate}
+                     <./py_visuals/figures/entropy_reduction.pdf>] [32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.102 \item C
+             arry propagation affects divisibility by 2] [33
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.117 \end{enumerate}
+                     ] [34]
+File: py_visuals/figures/bit_patterns.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_patterns.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_patterns.pdf  used on input lin
+e 170.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+ [35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.183 \]
+        ]
+Overfull \hbox (1.17409pt too wide) in paragraph at lines 188--189
+[][]\OT1/cmr/bx/n/12 Proposition 8.10 \OT1/cmr/m/n/12 (En-hanced En-tropy Prop-
+er-ties)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/it/12 The bi-nary en-tropy $\OML/cmm/m/
+it/12 H\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )$
+ []
+
+[36] [37] [38] [39] [40] [41]) (./sections/computational.tex [42]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+7.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [43]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tau' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+[44] [45]
+File: py_visuals/figures/bit_evolution.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_evolution.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_evolution.pdf  used on input li
+ne 135.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+) (./sections/conclusion.tex [46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 \item \textbf
+                 {Cryptographic Framework:}]
+Overfull \hbox (3.78203pt too wide) in paragraph at lines 41--42
+[]\OT1/cmr/m/n/12 Extending the cryp-to-graphic frame-work to other number-theo
+retic prob-
+ []
+
+[47]
+File: py_visuals/figures/bit_evolution.pdf Graphic file (type pdf)
+<use py_visuals/figures/bit_evolution.pdf>
+Package pdftex.def Info: py_visuals/figures/bit_evolution.pdf  used on input li
+ne 53.
+(pdftex.def)             Requested size: 312.00119pt x 232.00694pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./proofs/detailed_proofs.tex [48] [49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.33 \item F
+            or $\tau(n) = k$, we need $3n + 1 \equiv 0 \pmod{2^k}$] [50])
+(./main.bbl) [51] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 20DFC71B7F41AB86B568EDD35098D25D;12736.
+ ) 
+Here is how much of TeX's memory you used:
+ 23471 strings out of 475567
+ 423454 string characters out of 5777889
+ 2162187 words of memory out of 5000000
+ 44678 multiletter control sequences out of 15000+600000
+ 571754 words of font info for 87 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 84i,10n,87p,1140b,2151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/bobbarclay/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/tctt1095.600pk> </Users/bobbarclay/Library/texlive/2024basic/texmf-var/f
+onts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </Users/bobbarclay/Library/texlive/2
+024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/local/texli
+ve/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
+exlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loc
+al/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
+sr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi6.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024basic/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024basi
+c/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive
+/2024basic/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (51 pages, 490193 bytes).
+PDF statistics:
+ 1645 PDF objects out of 1728 (max. 8388607)
+ 1229 compressed objects within 13 object streams
+ 537 named destinations out of 1000 (max. 500000)
+ 642 words of extra memory for PDF output out of 10000 (max. 10000000)
+

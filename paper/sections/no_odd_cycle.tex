@@ -2,7 +2,7 @@
 
 \subsection{Forward Uniqueness}
 
-\begin{lemma}[Forward Uniqueness]
+\begin{lemma}[Forward Uniqueness]\label{lemma:forward-uniqueness}
 For every odd $n$, there is exactly one successor odd integer:
 \[
 T(n) = \frac{3n + 1}{2^{\tau(n)}},
@@ -31,7 +31,7 @@ which implies:
 3n + 1 = m\cdot 2^k \;\;\Rightarrow\;\; n = \frac{m\cdot 2^k - 1}{3}
 \]
 
-\begin{lemma}[Backward Growth]
+\begin{lemma}[Backward Growth]\label{lemma:backward-growth}
 For odd $m$, valid odd predecessors $n$ require exponentially large leaps $\sim 2^k$. As $k$ increases, $\frac{m\cdot 2^k - 1}{3}$ quickly outgrows $m$.
 \end{lemma}
 

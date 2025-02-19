@@ -33,13 +33,13 @@ which requires checking multiple values of $k$ to find valid predecessors.
 A single bit change in the input affects approximately half of the output bits after one application of $T_{odd}$.
 \end{theorem}
 
-This property emerges from the carry propagation in binary addition and multiplication, as visualized in Figure \ref{fig:bit_patterns}.
+This property emerges from the carry propagation in binary addition and multiplication, as visualized in Figure \ref{fig:bit_patterns_crypto}.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/bit_patterns.pdf}
 \caption{Bit pattern analysis showing the avalanche effect when dividing by $2^\tau$.}
-\label{fig:bit_patterns}
+\label{fig:bit_patterns_crypto}
 \end{figure}
 
 The avalanche effect occurs through three mechanisms:
@@ -51,13 +51,13 @@ The avalanche effect occurs through three mechanisms:
 
 \subsection{Compression Function Analysis}
 
-The compression phase, governed by $\tau(n)$, plays a crucial role in forcing descent. Figure \ref{fig:compression_ratio} visualizes how information is systematically compressed during each step.
+The compression phase, governed by $\tau(n)$, plays a crucial role in forcing descent. Figure \ref{fig:compression_ratio_crypto} visualizes how information is systematically compressed during each step.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{py_visuals/figures/compression_ratio.pdf}
 \caption{Compression ratio analysis.}
-\label{fig:compression_ratio}
+\label{fig:compression_ratio_crypto}
 \end{figure}
 
 \begin{theorem}[Compression Distribution]\label{thm:compression}
