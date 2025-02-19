@@ -3,71 +3,73 @@
 \contentsline {subsection}{\numberline {1.2}Novel Contributions}{7}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Paper Organization}{8}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Cryptographic Framework}{9}{section.2}%
-\contentsline {subsection}{\numberline {2.1}One-Way Property}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Avalanche Effect}{10}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Compression Function Analysis}{10}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Cryptographic Properties}{11}{subsection.2.4}%
-\contentsline {section}{\numberline {3}No Even Cycles}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Statement and Proof}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Computational Verification}{13}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Implications}{14}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Connection to Cryptographic Framework}{15}{subsection.3.4}%
-\contentsline {section}{\numberline {4}No Odd-to-Odd Cycle}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Forward Uniqueness}{17}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Backward Exponential Growth}{17}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}No Finite Odd Loop}{18}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Cryptographic Interpretation}{18}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Computational Verification}{19}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Baker's Bounds and Loop Impossibility}{19}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Theoretical Framework}{19}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Application to Collatz Trajectories}{20}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Numerical Evidence}{20}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Visualization and Analysis}{20}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Implications for Loop Impossibility}{20}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Forced Reduction: No Unbounded Orbits}{21}{section.6}%
-\contentsline {subsection}{\numberline {6.1}The Three Constraints}{21}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Forced Big Divisions}{22}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Measure-Theoretic and Entropy Considerations}{22}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Shannon Entropy Argument}{22}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}$\tau $-Distribution}{22}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.4}Edge Cases}{23}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Mersenne Numbers}{23}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Alternating-Bit Patterns}{23}{subsubsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.5}Computational Evidence}{23}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Measure Theory}{24}{section.7}%
-\contentsline {subsection}{\numberline {7.1}$\tau $-Distribution}{24}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Measure-Preserving Transformation}{25}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Ergodic Properties}{25}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Enhanced Measure-Theoretic Analysis}{26}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Measure-Theoretic Foundations}{27}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Ergodic Theory Framework}{28}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Vertical Structure Analysis}{28}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}Compression Distribution Analysis}{28}{subsection.7.8}%
-\contentsline {section}{\numberline {8}Information Theory}{29}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Entropy Analysis}{29}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Compression Analysis}{30}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Global Convergence}{30}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Bit Pattern Analysis}{31}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Computational Verification}{33}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Global Entropy Framework}{34}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Local Computational Verification}{35}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Entropy Framework}{36}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Enhanced Entropy Dynamics}{37}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}Information Loss}{37}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}Entropy Reduction Bounds}{38}{subsection.8.11}%
-\contentsline {subsection}{\numberline {8.12}Enhanced Computational Analysis}{39}{subsection.8.12}%
-\contentsline {subsection}{\numberline {8.13}Connection to Cryptographic Framework}{41}{subsection.8.13}%
-\contentsline {section}{\numberline {9}Computational Verification}{43}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Distribution of $\tau $}{44}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Enhanced Trajectory Analysis}{44}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Pattern Analysis}{45}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Performance Metrics}{45}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Statistical Validation}{45}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Visualization Framework}{46}{subsection.9.6}%
-\contentsline {section}{\numberline {10}Conclusion}{47}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Future Work}{48}{subsection.10.1}%
-\contentsline {section}{\numberline {A}Detailed Proofs}{48}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Cryptographic Framework Proofs}{48}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Measure Theory Proofs}{50}{subsection.A.2}%
-\contentsline {subsection}{\numberline {A.3}Information Theory Proofs}{50}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Global Behavior Proofs}{51}{subsection.A.4}%
+\contentsline {subsection}{\numberline {2.1}Terminology and Notation}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}One-Way Property}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Avalanche Effect and Bit Mixing}{11}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Compression Function Analysis}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Synthesis of Cryptographic Properties}{15}{subsection.2.5}%
+\contentsline {section}{\numberline {3}No Even Cycles}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statement and Proof}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Computational Verification}{17}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Implications}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Connection to Cryptographic Framework}{18}{subsection.3.4}%
+\contentsline {section}{\numberline {4}No Odd-to-Odd Cycle}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Forward Uniqueness}{19}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Backward Exponential Growth}{19}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}No Finite Odd Loop}{20}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Cryptographic Interpretation}{21}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Computational Verification}{21}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Baker's Bounds and Loop Impossibility}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Theoretical Framework}{22}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Application to Collatz Trajectories}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Numerical Evidence}{22}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Visualization and Analysis}{23}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Implications for Loop Impossibility}{23}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Forced Reduction: No Unbounded Orbits}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}The Three Constraints}{24}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Forced Big Divisions}{24}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Measure-Theoretic and Entropy Considerations}{25}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Shannon Entropy Argument}{25}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}$\tau $-Distribution}{25}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.4}Edge Cases}{25}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Mersenne Numbers}{25}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Alternating-Bit Patterns}{26}{subsubsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.5}Computational Evidence}{26}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Measure Theory}{27}{section.7}%
+\contentsline {subsection}{\numberline {7.1}$\tau $-Distribution}{27}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Measure-Preserving Transformation}{28}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Ergodic Properties}{28}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Enhanced Measure-Theoretic Analysis}{29}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Measure-Theoretic Foundations}{30}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Ergodic Theory Framework}{30}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Vertical Structure Analysis}{31}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Compression Distribution Analysis}{31}{subsection.7.8}%
+\contentsline {section}{\numberline {8}Information Theory}{32}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Entropy Analysis}{32}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Compression Analysis}{33}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Global Convergence}{34}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Bit Pattern Analysis}{35}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Computational Verification}{36}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Global Entropy Framework}{37}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Local Computational Verification}{37}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Entropy Framework}{38}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Enhanced Entropy Dynamics}{39}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Information Loss}{40}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Entropy Reduction Bounds}{41}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Enhanced Computational Analysis}{42}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.13}Connection to Cryptographic Framework}{43}{subsection.8.13}%
+\contentsline {section}{\numberline {9}Computational Verification}{45}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Distribution of $\tau $}{47}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Enhanced Trajectory Analysis}{47}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Pattern Analysis}{47}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Performance Metrics}{48}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Statistical Validation}{48}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Visualization Framework}{48}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Conclusion}{49}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Complete Proof Summary}{50}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Future Work}{52}{subsection.10.2}%
+\contentsline {section}{\numberline {A}Detailed Proofs}{53}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Cryptographic Framework Proofs}{53}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Measure Theory Proofs}{54}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Information Theory Proofs}{55}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Global Behavior Proofs}{55}{subsection.A.4}%
